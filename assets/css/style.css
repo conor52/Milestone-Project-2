@@ -1,0 +1,87 @@
+
+
+.front-image {
+
+   float:right;
+}
+
+
+
+
+
+    /** esports-location section **/
+
+    .events-header {
+
+        
+    }
+
+    #map {
+    
+    min-height: 360px;
+    
+    }
+
+    .blue {
+
+        background-color:blue;
+        text-align: center;
+        margin-bottom:75px;
+    }
+
+/** footer **/
+footer {
+ background-color:#4d94ff;
+ color: white;
+ min-height: 140px;
+ margin: 0;
+}
+
+.footer-style {
+
+ list-style-type: none;
+ margin: 0;
+ overflow: hidden;
+ padding-top:15px;
+ text-align:center;
+}
+
+.li-style-footer {
+
+ padding:5px;
+ font-size: 18px;
+ font-family: 'Lato' , sans-serif;
+ font-weight:500;
+ display:inline;
+}
+
+.social-links {
+ padding-bottom: 15px;
+ margin-top:20px;
+ text-align: center;
+}
+
+.social-links li a i {
+ width: 32px;
+ height: 32px;
+ padding-top: 14px;
+ border-radius: 50%;
+ font-size: 13px;
+ line-height: 6px;
+ text-align: center;
+ color:white;
+ background:#ff6600;
+ transition: all 0.2s ease-in-out;
+ -moz-transition: all 0.2s ease-in-out;
+ -webkit-transition: all 0.2s ease-in-out;
+ -o-transition: all 0.2s ease-in-out;
+}
+
+.social-links li a i:hover {
+ background:#4d94ff;
+}
+
+.footer-margin {
+
+    padding:5px;
+}

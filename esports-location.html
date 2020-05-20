@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+		emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
+	})();
+	</script>
+	<title>Esports Symposium Events</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">Esports Symposium</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Esports </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="league-of-legends.html">League Of Legends</a>
+							<a class="dropdown-item" href="#">Counter-Strike:Global Offensive</a>
+							<a class="dropdown-item" href="#">Dota 2</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="esports-location.html">Esports Events</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="nav navbar-nav ">
+				<li><a class="btn btn-primary free-trial-button-nav hvr-float-shadow " href="#" data-toggle="modal" data-target="#modal" role="button">Free Trial</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 offset-3">
+					<div class="blue">
+						<h2 class="events-header">Upcomming Events</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 offset-3">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Tournament</th>
+								<th>Location</th>
+								<th>Start Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>MSI</td>
+								<td>New York City, America</td>
+								<td>21/05/2020</td>
+							</tr>
+							<tr>
+								<td>Worlds</td>
+								<td>Beijing, China</td>
+								<td>10/10/2020</td>
+							</tr>
+							<tr>
+								<td>All Stars</td>
+								<td>California, America</td>
+								<td>15/12/2020</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 offset-3">
+					<h2>Check the markers below to find the event location</h2>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+				<div class="row">
+                <div class="col-6 offset-3">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4KL69ZfxLi3D3AB-8fD4Pjhm77sGxAgw&callback=initMap">
+	</script>
+	<script src="assets/js/maps.js"></script>
+</body>
+
+</html>
