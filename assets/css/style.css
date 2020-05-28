@@ -1,13 +1,79 @@
+/** Google font import link **/
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap');
 
-.front-image {
+/** navigation **/
 
-   float:right;
+.nav-style {
+
+    background-color:#98c5e9;
+    padding-bottom:35px;
+    padding-top:35px;
+
+    margin-bottom:200px;
+    
+}
+
+.title {
+
+    text-decoration: none;
+    font-size: 30px;
+    text-align:right;
+   font-family: 'Arial', sans-serif;
+    color:#194274;
+ margin-right:150px;
+    font-weight:600;
+    margin-left:150px;
+}
+
+.title:hover {
+
+    text-decoration: none;
+    color:#194274;
 }
 
 
 
+.nav-link-style {
+    font-family: 'Oswald', sans-serif;
+    color:#194274;
+    padding:7px;
+    font-size: 20px;
+    
+}
+.nav-link-style:hover {
 
+    color:#194274;
+    text-decoration: underline;
+    
+}
+.navbar-links {
+
+    padding-top:10px;
+}
+
+.newsletter-button-nav {
+
+     color:#194274;
+    background-color:white;
+    font-weight:600;
+    border-color: white;
+}
+
+.newsletter-button-nav:hover {
+
+     color:#194274;
+    background-color:white;
+    border-color: #194274;
+}
+
+/** index section **/
+
+.front-image {
+
+    width:95%;
+
+}
 
     /** esports-location section **/
 
@@ -31,7 +97,7 @@
 
 /** footer **/
 footer {
- background-color:#4d94ff;
+ background-color:#98c5e9;
  color: white;
  min-height: 140px;
  margin: 0;
@@ -54,34 +120,36 @@ footer {
  font-weight:500;
  display:inline;
 }
-
-.social-links {
- padding-bottom: 15px;
- margin-top:20px;
- text-align: center;
-}
-
-.social-links li a i {
- width: 32px;
- height: 32px;
- padding-top: 14px;
- border-radius: 50%;
- font-size: 13px;
- line-height: 6px;
- text-align: center;
- color:white;
- background:#ff6600;
- transition: all 0.2s ease-in-out;
- -moz-transition: all 0.2s ease-in-out;
- -webkit-transition: all 0.2s ease-in-out;
- -o-transition: all 0.2s ease-in-out;
-}
-
-.social-links li a i:hover {
- background:#4d94ff;
-}
-
 .footer-margin {
 
-    padding:5px;
+    padding:15px;
+}
+
+.newsletter-button-footer {
+
+    
+    margin-left:200px;
+    margin-top:10px;
+    color:#98c5e9;
+    background-color:white;
+    font-weight:600;
+    border-color: #98c5e9;
+
+}
+
+.newsletter-button-footer:hover {
+
+    
+ 
+    color:#98c5e9;
+    background-color:white;
+    border-color: #98c5e9;
+
+}
+
+/** margin containers **/
+
+.margin-bottom-container {
+
+    margin-bottom:125px;
 }
