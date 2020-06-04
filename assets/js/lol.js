@@ -1,38 +1,63 @@
-const url="https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lol/champions?token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg&filter[name]=Sejuani";
+const url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lol/leagues?filter[name]=World Championship&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
 
+function getData(champion, cb) {
+    var xhr = new XMLHttpRequest();
 
-                    function getData(type, cb) {
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
 
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("GET", url);
-                    xhr.send();
-
-                    xhr.onreadystatechange = function() {
-
-                        if(this.readyState == 4 && this.status == 200 ) {
-                            console.log((this.responseText));
-                        cb(JSON.parse(this.responseText));
-                        }
-                    };
-
-                    }
-
-                    function writeToDocument(type) {
-
-                        getData(type, function(data){
-                            console.dir(data);
-
-                            document.getElementById("data").innerHTML = data;
-                        });
-                    }
+    xhr.open("GET", url);
+    xhr.send();
+}
 
 
 
+function getTableHeaders(obj) {
+    var tableHeaders = [];
+    
+    Object.keys(obj).forEach(function(key) {
+        delete attackspeedoffset;
+      
+        tableHeaders.push(`<td class="table-header">${key}</td>`)
+    });
+    
+
+    return `<tr>${tableHeaders}</tr>`;
+}
 
 
 
+function writeToDocument(champion) {
+    
+    var tableRows = [];
+    var el = document.getElementById("data");
+    el.innerHTML = "";
+    
+
+    getData(champion, function(data) {
+      
+        
+        var tableHeaders = getTableHeaders(data[0]);
+
+        data.forEach(function(item) {
+           
+            var dataRow = [];
+
+            Object.keys(item).forEach(function(key){
+              
 
 
+                    
+                    dataRow.push(`<td class="table-cell">${item[key]}</td>`);
+                    
+            });
+           
+            tableRows.push(`<tr>${dataRow}</tr>`);
+        });
 
-
-
+        el.innerHTML = `<table class="table-api">${tableHeaders}${tableRows}</table>`.replace(/,/g, "");
+    });
+}

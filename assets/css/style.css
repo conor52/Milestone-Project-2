@@ -14,16 +14,28 @@
     
 }
 
+.test {
+
+    color:green;
+}
+
+
+
 .title {
 
     text-decoration: none;
     font-size: 30px;
-    text-align:right;
+
    font-family: 'Arial', sans-serif;
     color:#194274;
- margin-right:150px;
+    text-align: center;
     font-weight:600;
-    margin-left:150px;
+    
+}
+
+.title-position {
+
+    text-align: center;
 }
 
 .title:hover {
@@ -58,6 +70,9 @@
     background-color:white;
     font-weight:600;
     border-color: white;
+    margin-top:10px;
+    
+   
 }
 
 .newsletter-button-nav:hover {
@@ -65,7 +80,27 @@
      color:#194274;
     background-color:white;
     border-color: #194274;
+   
 }
+
+/** tables **/
+
+.table-header{
+
+    border: 1px solid black;
+}
+
+.table-cell {
+
+ border: 1px solid black;
+}
+
+.table-api {
+
+ border: 10px solid black;
+}
+
+
 
 /** index section **/
 
@@ -106,17 +141,17 @@ footer {
 .footer-style {
 
  list-style-type: none;
- margin: 0;
  overflow: hidden;
  padding-top:15px;
- text-align:center;
+ 
 }
 
 .li-style-footer {
 
  padding:5px;
  font-size: 18px;
- font-family: 'Lato' , sans-serif;
+ font-family: 'Oswald', sans-serif;
+    color:#194274;
  font-weight:500;
  display:inline;
 }
@@ -128,12 +163,12 @@ footer {
 .newsletter-button-footer {
 
     
-    margin-left:200px;
-    margin-top:10px;
-    color:#98c5e9;
+   
+     color:#194274;
     background-color:white;
     font-weight:600;
-    border-color: #98c5e9;
+    border-color: white;
+    margin-top:15px;
 
 }
 
@@ -141,9 +176,10 @@ footer {
 
     
  
-    color:#98c5e9;
+     color:#194274;
     background-color:white;
-    border-color: #98c5e9;
+   
+    border-color: white;
 
 }
 
