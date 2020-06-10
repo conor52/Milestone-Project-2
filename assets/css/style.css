@@ -6,11 +6,11 @@
 
 .nav-style {
 
-    background-color:#98c5e9;
+    background-color:#040404;
     padding-bottom:35px;
     padding-top:35px;
 
-    margin-bottom:200px;
+    
     
 }
 
@@ -27,15 +27,15 @@
     font-size: 30px;
 
    font-family: 'Arial', sans-serif;
-    color:#194274;
-    text-align: center;
+    color:#ffffff;
+    
     font-weight:600;
     
 }
 
 .title-position {
 
-    text-align: center;
+   padding-left:100px;
 }
 
 .title:hover {
@@ -48,7 +48,7 @@
 
 .nav-link-style {
     font-family: 'Oswald', sans-serif;
-    color:#194274;
+    color:#ffffff;
     padding:7px;
     font-size: 20px;
     
@@ -104,10 +104,28 @@
 
 /** index section **/
 
-.front-image {
+.jumbotron-header {
 
-    width:95%;
+    color:#66FCF1;
+}
 
+.jumbotron-style {
+
+    background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
+
+    padding-bottom:300px;
+}
+
+
+.jumbotron-paragraph {
+
+    color:#ffffff;
+}
+
+.card-style {
+
+    background-color:#040404;
+    border-color: #040404;
 }
 
     /** esports-location section **/
@@ -132,7 +150,7 @@
 
 /** footer **/
 footer {
- background-color:#98c5e9;
+ background-color:#040404;
  color: white;
  min-height: 140px;
  margin: 0;
@@ -142,23 +160,22 @@ footer {
 
  list-style-type: none;
  overflow: hidden;
- padding-top:15px;
+ margin-top:50px;
+ 
  
 }
 
 .li-style-footer {
 
- padding:5px;
+ 
  font-size: 18px;
  font-family: 'Oswald', sans-serif;
-    color:#194274;
+    color:#ffffff;
  font-weight:500;
  display:inline;
+ padding-right:10px;
 }
-.footer-margin {
 
-    padding:15px;
-}
 
 .newsletter-button-footer {
 
@@ -168,7 +185,7 @@ footer {
     background-color:white;
     font-weight:600;
     border-color: white;
-    margin-top:15px;
+    margin-top:40px;
 
 }
 
