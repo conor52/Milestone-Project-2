@@ -30,6 +30,7 @@
     color:#ffffff;
     
     font-weight:600;
+    margin-top:
     
 }
 
@@ -41,7 +42,7 @@
 .title:hover {
 
     text-decoration: none;
-    color:#194274;
+    color:#ffffff;
 }
 
 
@@ -55,8 +56,8 @@
 }
 .nav-link-style:hover {
 
-    color:#194274;
-    text-decoration: underline;
+    color:#ffffff;
+    text-decoration:none;
     
 }
 .navbar-links {
@@ -66,10 +67,10 @@
 
 .newsletter-button-nav {
 
-     color:#194274;
-    background-color:white;
-    font-weight:600;
-    border-color: white;
+     color:#ffffff;
+    font-size:28px;
+    
+    
     margin-top:10px;
     
    
@@ -77,9 +78,8 @@
 
 .newsletter-button-nav:hover {
 
-     color:#194274;
-    background-color:white;
-    border-color: #194274;
+     color:#ffffff;
+    
    
 }
 
@@ -122,11 +122,50 @@
     color:#ffffff;
 }
 
-.card-style {
+/* card */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+.card-header-color {
+
+    color:#66FCF1;
+}
+
+.card-header-background {
 
     background-color:#040404;
-    border-color: #040404;
+    text-align:center;
 }
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+
+.card-header{color:dodgerblue}
 
     /** esports-location section **/
 
@@ -181,10 +220,10 @@ footer {
 
     
    
-     color:#194274;
-    background-color:white;
+     color:#ffffff;
+   
     font-weight:600;
-    border-color: white;
+    font-size: 28px;
     margin-top:40px;
 
 }
@@ -193,10 +232,8 @@ footer {
 
     
  
-     color:#194274;
-    background-color:white;
-   
-    border-color: white;
+     color:#ffffff;
+  
 
 }
 
