@@ -25,35 +25,49 @@
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="index.html">Esports Symposium</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Esports </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="league-of-legends.html">League Of Legends</a>
-							<a class="dropdown-item" href="#">Counter-Strike:Global Offensive</a>
-							<a class="dropdown-item" href="#">Dota 2</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="esports-location.html">Esports Events</a>
-					</li>
-				</ul>
-			</div>
-			<ul class="nav navbar-nav ">
-				<li><a class="btn btn-primary free-trial-button-nav hvr-float-shadow " href="#" data-toggle="modal" data-target="#modal" role="button">Free Trial</a></li>
-			</ul>
-		</nav>
-	</header>
+<header>
+    <div class="container-fluid">
+    <div class="row  nav-style">
+    
+    <div class="col-lg-4 col-9    title-position">
+    
+  <a class="title"  href="index.html"><h1 class="title">Esports Symposium</h1></a>
+  </div>
+  
+  <nav class="col-lg-4 col-2 offset-1 offset-lg-0     navbar navbar-expand-lg  ">
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon toggler-style "></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav navbar-links ">
+     
+      <li class="nav-item">
+        <a  class="  nav-link-style " href="league-of-legends.html">League of Legends</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link-style" href="player-stats.html">Player Stats</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link-style" href="esports-location.html">Esports Events</a>
+      </li>
+    
+    </ul>
+    </div>
+    
+  </nav>
+    <div class="col-lg-2  offset-lg-2    d-none d-lg-block ">
+   <ul class="nav navbar-nav ">
+      <li><a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce d-none d-lg-block">
+      <i class="newsletter-button-nav hvr-icon  far fa-envelope"></i>
+</a>
+</li>
+    </ul>
+    </div>
+
+    </div>
+    
+    </div>
+    </header>
 	<section>
 		<div class="container-fluid">
 			<div class="row">
@@ -111,6 +125,41 @@
 			</div>
 		</div>
 	</section>
+
+    <footer class="container-fluid">
+		<div class="row footer-margin">
+			<div class="col-12 col-lg-4 ">
+				<div>
+					<ul class="footer-style li-style-footer-esports-ltd">
+						<li class=" li-style-footer">
+							@2020 Esports Symposium Ltd
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+            				<div>
+					<ul class="footer-style">
+
+						<li class="li-style-footer">
+							Terms and Conditions    
+						</li>
+						<li class="li-style-footer">     Privacy Policy
+						</li>
+					</ul>
+				</div>
+
+		
+			</div>
+			<div class=" col-12 col-lg-2 center">
+				 <a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce">
+      <i class="newsletter-button-footer hvr-icon  far fa-envelope"></i>
+</a>
+
+			</div>
+		</div>
+        </footer>
 	<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4KL69ZfxLi3D3AB-8fD4Pjhm77sGxAgw&callback=initMap">
 	</script>
