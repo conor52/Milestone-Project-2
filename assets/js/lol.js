@@ -1,4 +1,4 @@
-const url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lol/leagues?filter[name]=World Championship&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
+const url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lol/champions?search[name]=u&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
 
 function getData(champion, cb) {
     var xhr = new XMLHttpRequest();

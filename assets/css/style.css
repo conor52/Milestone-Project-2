@@ -16,6 +16,11 @@
     
 }
 
+.background-image {
+
+   background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
+}
+
 
 
 .title {
@@ -96,22 +101,30 @@
 
 .table-header{
 
-    border: 1px solid black;
+    border: 1px solid white;
+    color:green;
 }
 
 .table-cell {
 
- border: 1px solid black;
+ border: 1px solid white;
+ color:green;
 }
 
 .table-api {
 
- border: 10px solid black;
+ border: 10px solid white;
 }
 
 
 
 /** index section **/
+
+.custom-jumbotron {
+    padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
 
 .jumbotron-header {
 
@@ -120,10 +133,10 @@
 
 .jumbotron-style {
 
-    background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
 
     padding-bottom:300px;
 }
+
 
 
 .jumbotron-paragraph {
@@ -146,43 +159,43 @@
     color:#66FCF1;
 }
 
+.card-text-colour {
+
+    background-color:#1F2833;
+    color:white;
+    
+}
+.block-border-colour {
+
+    border:0px;
+}
+
 .card-header-background {
 
     background-color:#040404;
     text-align:center;
 }
 
-/* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active, 
-.carousel-inner>.row-equal.next, 
-.carousel-inner>.row-equal.prev {
-    display: flex;
-}
-
-/* prevent flicker during transition */
-.carousel-inner>.row-equal.active.left, 
-.carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
-    display: flex;
-}
 
 
-/* control image height */
+
+
 .card-img-top-250 {
     max-height: 250px;
     overflow:hidden;
 }
 
 
-.card-header{color:dodgerblue}
+
 
     /** esports-location section **/
 
     .events-header {
 
-        
+        color:white;
     }
 
+ 
     #map {
     
     min-height: 360px;
@@ -328,6 +341,4 @@ margin-left:0;
 text-align:center;
 
 }
-
-
 }
