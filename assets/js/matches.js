@@ -1,10 +1,11 @@
 $(document).ready(function() {
      
-         writeToDocument('teams')
+         writeToDocument('teams');
+         
    
 });
 
-const url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/lol/champions?search[name]=udyr&volibear&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
+const url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.champions?filter[name]=Brand,Twitch&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
 
 function getData(champion, cb) {
     var xhr = new XMLHttpRequest();
@@ -36,7 +37,7 @@ function writeToDocument(champion) {
         data.forEach(function(item) {
            
             var dataRow = [];
-            dataRow.push('<td class="table-cell">'+item['armor']+'</td><td class="table-cell">'+item['armorperlevel']+'</td>');
+            dataRow.push('<td class="table-cell">'+item['armor']+'</td>>');
          
            
             tableRows.push(`<tr>${dataRow}</tr>`);

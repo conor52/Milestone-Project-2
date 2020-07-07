@@ -3,26 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap');
 
 /** navigation **/
-
 .nav-style {
 
     background-color:#040404;
     padding-bottom:35px;
     padding-top:35px;
-    
-    
-
-    
-    
 }
-
 .background-image {
 
    background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
 }
-
-
-
 .title {
 
     text-decoration: none;
@@ -33,15 +23,10 @@
     text-align:center;
     font-weight:600;
     margin-top:9px;
-    
-    
 }
 
 .title-position {
-
-   
   margin:right;
-
 }
 
 .title:hover {
@@ -49,24 +34,18 @@
     text-decoration: none;
     color:#ffffff;
 }
-
-
-
-
 .nav-link-style {
     font-family: 'Oswald', sans-serif;
     color:#ffffff;
     padding:7px;
     margin-right:14px;
     font-size: 20px;
-
 }
 
 .nav-link-style:hover {
 
     color:#ffffff;
     text-decoration:underline;
-    
 }
 .navbar-links {
 
@@ -74,11 +53,7 @@
 }
 
 .toggler-style {
-
- 
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
- 
-    
 
 }
 .toggler-position {
@@ -97,54 +72,51 @@
      color:#ffffff;
 }
 
+.sticky-top {
+    position:relative;
+}
+
+.sticky-top-inner {
+
+    position:fixed;
+}
+
 /** tables **/
-
-.table-header{
-
-    border: 1px solid white;
-    color:green;
-}
-
-.table-cell {
-
- border: 1px solid white;
- color:green;
-}
-
-.table-api {
-
- border: 10px solid white;
-}
-
-.player-cell {
-
-    
-}
 
 
 
 /** index section **/
 
-.custom-jumbotron {
-    padding-top: 30px;
-  padding-bottom: 30px;
+.jumbotron-style {
+    padding-top:66px;
+  padding-bottom:300px;
   margin-bottom: 30px;
 }
 
-.jumbotron-header {
+.jumbotron-style-events {
+    padding-top:66px;
+  padding-bottom:200px;
+  
+}
+
+.cyan {
 
     color:#66FCF1;
 }
+.jumbotron-paragraph {
 
-.jumbotron-style {
-
-
-    padding-bottom:300px;
+    color:#ffffff;
 }
 
+.why-use-symposium-head {
 
+    
+    font-family:'Arial', sans-serif; 
+    font-size:45px;
+    text-align:center;
+}
 
-.jumbotron-paragraph {
+.why-use-symposium-text {
 
     color:#ffffff;
 }
@@ -153,6 +125,11 @@
 .row-equal > div[class*='col-'] {
     display: flex;
     flex: 1 0 auto;
+}
+
+.card {
+
+    background-color:#1F2833;
 }
 
 .row-equal .card {
@@ -168,12 +145,8 @@
 
     background-color:#1F2833;
     color:white;
-    
 }
-.block-border-colour {
 
-    border:0px;
-}
 
 .card-header-background {
 
@@ -181,17 +154,23 @@
     text-align:center;
 }
 
+.card-block {
 
+    background-color:#1F2833;
+}
 
+.card-text {
 
+    font-size:18px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:10px;
+}
 
 .card-img-top-250 {
     max-height: 250px;
     overflow:hidden;
 }
-
-
-
 
     /** esports-location section **/
 
@@ -200,18 +179,10 @@
         color:white;
     }
 
- 
     #map {
     
     min-height: 360px;
     
-    }
-
-    .blue {
-
-        background-color:blue;
-        text-align: center;
-        margin-bottom:75px;
     }
 
 /** footer **/
@@ -227,13 +198,9 @@ footer {
  list-style-type: none;
  overflow: hidden;
  margin-top:50px;
- 
- 
 }
 
 .li-style-footer {
-
- 
  font-size:18px;
  font-family: 'Oswald', sans-serif;
  color:#ffffff;
@@ -242,10 +209,7 @@ footer {
 }
 
 .li-style-footer-esports-ltd {
-
-   
    margin-left:35px;
-    
 }
 
  
@@ -259,32 +223,23 @@ footer {
 .newsletter-button-footer:hover {
      color:#ffffff;
 }
-
-
-
 /** margin containers **/
 
 .margin-bottom-container {
 
     margin-bottom:125px;
 }
-
-
 /* Media Queries */
 
 @media only screen and (max-width: 992px) {
- 
 
 .title {
-
  text-align:center;
- 
 }
 
 }
 
 @media only screen and (max-width:740px) {
- 
 
 .title {
 
@@ -293,19 +248,14 @@ footer {
 
 }
 
-
 @media only screen and (max-width:450px) {
  
-
 .title {
 
  font-size:20px;
 }
 
 }
-
-
-
 
 @media only screen and (max-width:1337px) {
  
@@ -319,7 +269,6 @@ footer {
 }
 
 @media only screen and (max-width:992px) {
- 
 
 .footer-style  {
 
@@ -327,7 +276,6 @@ text-align:center;
 }
 
 }
-
 
 @media only screen and (max-width:992px) {
  
@@ -344,6 +292,14 @@ margin-left:0;
 .center {
 
 text-align:center;
+
+}
+}
+@media only screen and (max-width:992px) {
+ 
+.margin-bottom-card-992 {
+
+margin-bottom:75px;
 
 }
 }
