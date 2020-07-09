@@ -3,8 +3,6 @@ $(document).ready(function() {
     writeToDocumentCaps('player')
 });
 
-
-
 $(document).ready(function() {
     writeToDocumentJankos('player')
 });
@@ -49,21 +47,11 @@ $(document).ready(function() {
     writeToDocumentWunder('player')
 });
 
-
-
-
-
-
-
-
 function getData(player, cb) {
     var xhr = new XMLHttpRequest();
 
     
    var url="https://cors-anywhere.herokuapp.com/https://api.pandascore.co/players?filter[name]="+player+"&Souffle&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
-
-
-
 
     xhr.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {

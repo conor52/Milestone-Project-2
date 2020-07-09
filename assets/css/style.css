@@ -103,6 +103,11 @@
 
     color:#66FCF1;
 }
+
+.white {
+
+    background-color: #ffffff;
+}
 .jumbotron-paragraph {
 
     color:#ffffff;
@@ -183,6 +188,13 @@
     
     min-height: 360px;
     
+    }
+
+    /** Matches **/
+
+    .region-cell {
+
+        text-align:right;
     }
 
 /** footer **/
