@@ -83,7 +83,30 @@
 
 /** tables **/
 
+.table-date {
 
+    text-align:left;
+}
+
+.time-h4 {
+
+    font-size:15px;
+}
+
+.time-span {
+
+    font-size: 25px;
+}
+
+.league-name {
+
+    text-align:right;
+}
+
+.matchup {
+
+    text-align: center;
+}
 
 /** index section **/
 

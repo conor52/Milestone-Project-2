@@ -1,14 +1,19 @@
 $(document).ready(function() {
      
-         writeToDocument('teams');
+         writeToDocument('match');
 
 });
 
-const url =  "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/tournaments?search[slug]=league-of-legends-LEC&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
 
 
-function getData(champion, cb) {
+
+
+function getData(match, cb) {
     var xhr = new XMLHttpRequest();
+
+    var url ="https://cors-anywhere.herokuapp.com/https://api.pandascore.co/matches?filter[id]="+match+"&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
+    
+
     xhr.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             cb(JSON.parse(this.responseText));
@@ -17,38 +22,41 @@ function getData(champion, cb) {
     xhr.open("GET", url);
     xhr.send();
 }
-function getTableHeaders(obj) {
-    var tableHeaders = [];
-    
-    data = Object.keys(obj)
-    tableHeaders.push('<td class="table-header">'+data[0]+'</td><td class="table-header">'+data[1]+'</td>');
-    return `<tr>${tableHeaders}</tr>`;
-}
+
  
-function writeToDocument(champion) { 
-    var tableRows = [];
-    var el = document.getElementById("data");
-    el.innerHTML = "";
+function writeToDocument(match) { 
+    match=560862;
     
- 
-    getData(champion, function(data) {
+    
+    
+    getData(match, function(data) {
+        var gameDetails = [];
         console.dir(data);
-      
-       var tableHeaders = getTableHeaders(data[0]);
- 
+        var el = document.getElementById("game-1");
+
         data.forEach(function(item) {
            
-            var dataRow = [];
-           dataRow.push('<td class="table-cell">'+item['armor']+'</td><td class="table-cell">'+item['armorperlevel']+'</td>');
- 
-            
-         
-           
-            tableRows.push(`<tr>${dataRow}</tr>`);
+            var matchRow = [];
+           matchRow.push('<p>'+item['name']+'</p>');
+            gameDetails.push(`<tr>${matchRow}</tr>`);
         });
- 
-        el.innerHTML = `<table class="table-api">${tableHeaders}${tableRows}</table>`.replace(/,/g, "");
+        el.innerHTML = `<p>${gameDetails}</p>`;
     });
+
+     getData(match, function(data) {
+        var gameDetails = [];
+        var el = document.getElementById("league-and-format");
+
+        data.forEach(function(item) {
+           
+            var matchRow = [];
+           matchRow.push('<p>'+item['league']['name']+'<br>Best of 1</p>');
+            gameDetails.push(`<tr>${matchRow}</tr>`);
+        });
+        el.innerHTML = `<p>${gameDetails}</p>`;
+    });
+
+    
 }
  
  
