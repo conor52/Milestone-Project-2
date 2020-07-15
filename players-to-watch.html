@@ -1,404 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-   
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
-      })();
-    </script>
-     <script src="assets/js/stats.js"></script>
-
-    <title>Esports Symposium Home</title>
-  </head>
-  <body>
-
-  <header>
-    <div class="container-fluid">
-    <div class="row  nav-style">
-    
-    <div class="col-lg-4 col-9    title-position">
-    
-  <a class="title"  href="index.html"><h1 class="title">Esports Symposium</h1></a>
-  </div>
-  
-  <nav class="col-lg-4 col-2 offset-1 offset-lg-0     navbar navbar-expand-lg  ">
-  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-    <span class="navbar-toggler-icon toggler-style "></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav navbar-links ">
-     
-      <li class="nav-item">
-        <a  class="  nav-link-style " href="matches.html">Matches</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link-style" href="esports-events.html">Esports Events</a>
-      </li>
-    
-    </ul>
-    </div>
-    
-  </nav>
-    <div class="col-lg-2  offset-lg-2    d-none d-lg-block ">
-   <ul class="nav navbar-nav ">
-      <li><a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce d-none d-lg-block">
-      <i class="newsletter-button-nav hvr-icon  far fa-envelope"></i>
-</a>
-</li>
-    </ul>
-    </div>
-
-    </div>
-    
-    </div>
-    </header>
-    <div class="background-image">
-     <section class="index-jumbotron">
-
-   <div class="custom-jumbotron jumbotron-fluid jumbotron-style mb-0" style="background-img">
-  <div class="container ">
-
-    <h1 class="display-3 cyan jumbotron-header font-weight-bold">Check out player stats in the LEC<h1>
-    <p class="lead jumbotron-paragraph">We've picked a few of the superstars to get you on your way</p>
-
-  </div>
-
- 
-</div>
-
-</section>
-   
-    <section>
-      <div class="container p-5">
-        <div class="row row-equal mb-5  ">
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card" style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/caps.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block block-border-colour ">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Caps</h3></div>
-                <div class="card-text card-text-colour">
-                  
-                    <div id ="Caps"></div>
-                    
-                </div>
-              </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         type="text/css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+         />
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+         crossorigin="anonymous"
+         />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script
+        
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+         ></script>
+      <script
+        
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+         ></script>
+      <script>
+         (function () {
+           emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
+         })();
+      </script>
+      <script src="assets/js/stats.js"></script>
+      <title>Esports Symposium Home</title>
+   </head>
+   <body>
+      <header>
+         <div class="sticky-top">
+            <div class="container-fluid sticky-top-inner">
+               <div class="row  nav-style">
+                  <div class="col-lg-4 col-9">
+                     <a class="title"  href="index.html">
+                        <h1 class="title">Esports Symposium</h1>
+                     </a>
+                  </div>
+                  <nav class="col-lg-4 col-2 offset-1 offset-lg-0     navbar navbar-expand-lg  ">
+                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                     <span class="navbar-toggler-icon toggler-style "></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbar-links ">
+                           <li class="nav-item">
+                              <a  class="  nav-link-style " href="matches.html">Matches</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link-style" href="esports-events.html">Esports Events</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+                  <div class="col-lg-2  offset-lg-2    d-none d-lg-block ">
+                     <ul class="nav navbar-nav ">
+                        <li><a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce d-none d-lg-block">
+                           <i class="newsletter-button-nav hvr-icon  far fa-envelope"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12  margin-bottom-card-992">
-            <div class="card "  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/jankos.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Jankos</h3></div>
-                <div class="card-text card-text-colour">
-                <div id ="Jankos"></div>
-                </div>
-              </div>
+         </div>
+      </header>
+      <div class="background-image">
+         <section class="index-jumbotron">
+            <div class="custom-jumbotron jumbotron-fluid jumbotron-style mb-0">
+               <div class="container ">
+                  <h2 class="display-3 cyan font-weight-bold">
+                  Check out player stats in the LEC
+                  </h2>
+                  <p class="lead white">We've picked a few of the superstars to get you on your way</p>
+               </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12 d-none d-md-block  margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/rekkles.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Rekkles</h3></div>
-                <div class="card-text card-text-colour">
-                 <div id ="Rekkles"></div>
-                </div>
-              </div>
+         </section>
+         <!--For players to watch, I wanted to create a card per player. Originally I wanted it to be a fully fledged out player stats, sadly the API didnt support this feature. Instead, I retrieved basic information such as their player position
+          and team. The card offers a layer of seperation of each player and allows me to have an image per player. I decided to go with these images as they fit the colour scheme.
+          -->
+         <section>
+            <div class="container p-5">
+               <div class="row row-equal mb-5  ">
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card" style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/caps.png"
+                              alt="caps-portrait"
+                              />
+                        </div>
+                        <div class="card-block block-border-colour ">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Caps</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Caps"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12  margin-bottom-card-992">
+                     <div class="card "  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/jankos.png"
+                              alt="jankos-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Jankos</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Jankos"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 d-none d-md-block  margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/rekkles.png"
+                              alt="rekkles-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Rekkles</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Rekkles"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-equal mb-5 ">
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/carzy.png"
+                              alt="carzy-portrait"
+                              />
+                        </div>
+                        <div class="card-block ">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Carzzy</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Carzzy"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/finn.png"
+                              alt="finn-portrait"
+                              />
+                        </div>
+                        <div class="card-block ">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Finn</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Finn"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/alphari.png"
+                              alt="alphari-portrait"
+                              />
+                        </div>
+                        <div class="card-block ">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Alphari</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Alphari"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-equal mb-5  ">
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/perkz.png"
+                              alt="perkz-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Perkz</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Perkz"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/shadow.png"
+                              alt="shadow-portrait"
+                              />
+                        </div>
+                        <div class="card-block ">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Shad0w</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Shad0w"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/wunder.png"
+                              alt="wunder-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Wunder</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Wunder"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-equal  ">
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/hans.png"
+                              alt="hans-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Hans Sama</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Hans-sama"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/larssen.png"
+                              alt="larssen-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Larssen</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Larssen"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                     <div class="card"  style="border:1px solid rgb(4, 4, 4)">
+                        <div class="card-img-top card-img-top-250">
+                           <img
+                              class="img-fluid"
+                              src="assets/images/nukeduck.png"
+                              alt="nukeduck-portrait"
+                              />
+                        </div>
+                        <div class="card-block">
+                           <div class="card-header card-header-background">
+                              <h3 class="cyan">Nukeduck</h3>
+                           </div>
+                           <div class="card-text white">
+                              <div id ="Nukeduck"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="row row-equal mb-5 ">
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/Carzy.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block ">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Carzzy</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Carzzy"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/Finn.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block ">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Finn</h3></div>
-                <div class="card-text card-text-colour">
-                 <div id ="Finn"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/alphari.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block ">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Alphari</h3></div>
-                <div class="card-text card-text-colour">
-                 <div id ="Alphari"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-         <div class="row row-equal mb-5  ">
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/perkz.png"
-                  alt="Carousel 1"
-                />
-              </div>
-               <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Perkz</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Perkz"></div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/shadow.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block ">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Shadow</h3></div>
-                <div class="card-text card-text-colour">
-                 <div id ="Shad0w"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/wunder.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Wunder</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Wunder"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-equal  ">
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/Hans.png"
-                  alt="Carousel 1"
-                />
-              </div>
-               <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Hans Sama</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Hans-sama"></div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-            <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/Larssen.png"
-                  alt="Carousel 1"
-                />
-              </div>
-               <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Larssen</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Larssen"></div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-       
-          <div class="col-md-4 col-12 margin-bottom-card-992">
-            <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-              <div class="card-img-top card-img-top-250">
-                <img
-                  class="img-fluid"
-                  src="assets/images/Nukeduck.png"
-                  alt="Carousel 1"
-                />
-              </div>
-              <div class="card-block">
-                <div class="card-header card-header-background"><h3 class="card-header-color">Nukeduck</h3></div>
-                <div class="card-text card-text-colour">
-                  <div id ="Nukeduck"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         </section>
       </div>
-    </section>
-
-    </div>
-
-    <footer class="container-fluid">
-		<div class="row footer-margin">
-			<div class="col-12 col-lg-4 ">
-				<div>
-					<ul class="footer-style li-style-footer-esports-ltd">
-						<li class=" li-style-footer">
-							@2020 Esports Symposium Ltd
-						</li>
-					
-					</ul>
-				</div>
-			</div>
-			<div class="col-12 col-lg-6">
-            				<div>
-					<ul class="footer-style">
-
-						<li class="li-style-footer">
-							Terms and Conditions    
-						</li>
-						<li class="li-style-footer">     Privacy Policy
-						</li>
-					</ul>
-				</div>
-
-			</div>
-			<div class=" col-12 col-lg-2 center">
-				 <a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce">
-      <i class="newsletter-button-footer hvr-icon  far fa-envelope"></i>
-</a>
-
-			</div>
-		</div>
-        </footer>
-
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/send-newsletter.js"></script>
-
-    
-  </body>
+      <footer class="container-fluid">
+         <div class="row footer-margin">
+            <div class="col-12 col-lg-4 ">
+               <div>
+                  <ul class="footer-style li-style-footer-esports-ltd">
+                     <li class=" li-style-footer">
+                        @2020 Esports Symposium Ltd
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+               <div>
+                  <ul class="footer-style">
+                     <li class="li-style-footer">
+                        Terms and Conditions    
+                     </li>
+                     <li class="li-style-footer">     Privacy Policy
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class=" col-12 col-lg-2 center">
+               <a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce">
+               <i class="newsletter-button-footer hvr-icon  far fa-envelope"></i>
+               </a>
+            </div>
+         </div>
+      </footer>
+      <script
+         src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
+         ></script>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+         crossorigin="anonymous"
+         ></script>
+      <script src="assets/js/send-newsletter.js"></script>
+   </body>
 </html>

@@ -1,340 +1,261 @@
 /** Google font import link **/
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap');
-
 /** navigation **/
 .nav-style {
-
-    background-color:#040404;
-    padding-bottom:35px;
-    padding-top:35px;
+background-color:#040404;
+padding-bottom:35px;
+padding-top:35px;
 }
 .background-image {
-
-   background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
+background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
 }
 .title {
-
-    text-decoration: none;
-    font-size: 30px;
-
-   font-family: 'Arial', sans-serif;
-    color:#ffffff;
-    text-align:center;
-    font-weight:600;
-    margin-top:9px;
+font-family: 'Arial', sans-serif;
+color:#ffffff;
+text-align:center;
+font-weight:600;
+margin-top:9px;
 }
 
-.title-position {
-  margin:right;
-}
-
-.title:hover {
-
-    text-decoration: none;
-    color:#ffffff;
+.title:hover /**This clas removes styling that you'd normally see while hovering on a link. White compliments the black background so well that I didnt want to change it. **/{
+text-decoration: none;
+color:#ffffff;
 }
 .nav-link-style {
-    font-family: 'Oswald', sans-serif;
-    color:#ffffff;
-    padding:7px;
-    margin-right:14px;
-    font-size: 20px;
+font-family: 'Oswald', sans-serif;
+color:#ffffff;
+padding:7px;
+margin-right:14px;
+font-size: 20px;
 }
-
 .nav-link-style:hover {
-
-    color:#ffffff;
-    text-decoration:underline;
+color:#ffffff;
+text-decoration:underline;
 }
 .navbar-links {
-
-    padding-top:10px;
+padding-top:10px;
 }
-
 .toggler-style {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .toggler-position {
-
-    margin-bottom:100px;
+margin-bottom:100px;
 }
-
 .newsletter-button-nav {
-
-     color:#ffffff;
-    font-size:23.5px;
-     margin-top:24px;
+color:#ffffff;
+font-size:23.5px;
+margin-top:24px;
 }
-
 .newsletter-button-nav:hover {
-     color:#ffffff;
+color:#ffffff;
 }
-
-.sticky-top {
-    position:relative;
+.sticky-top /** Position relative in parent and fixed in child element is easiest way to create a sticky top.**/{
+position:relative;
 }
-
 .sticky-top-inner {
-
-    position:fixed;
+position:fixed;
 }
-
-/** tables **/
-
-.table-date {
-
-    text-align:left;
-}
-
-.time-h4 {
-
-    font-size:15px;
-}
-
-.time-span {
-
-    font-size: 25px;
-}
-
-.league-name {
-
-    text-align:right;
-}
-
-.matchup {
-
-    text-align: center;
-}
-
-/** index section **/
-
-.jumbotron-style {
-    padding-top:66px;
-  padding-bottom:300px;
-  margin-bottom: 30px;
-}
-
-.jumbotron-style-events {
-    padding-top:66px;
-  padding-bottom:200px;
-  
-}
-
-.cyan {
-
-    color:#66FCF1;
-}
-
+/** colors **/
 .white {
-
-    background-color: #ffffff;
+color:#ffffff;
 }
-.jumbotron-paragraph {
-
-    color:#ffffff;
+.cyan {
+color:#66FCF1;
 }
-
+/** matches table **/
+.time-h4 {
+font-size:15px;
+}
+.time-span {
+font-size: 25px;
+}
+.team-img-left{
+width:50px;
+height:50px;
+margin-top:20px;
+}
+.team-img-right{
+width:50px;
+height:50px;
+margin-top:20px;
+}
+.matchup {
+margin-top:25px;
+}
+.matchup-style {
+font-family: 'Roberto',Helvetica,sans-serif;
+font-weight:500;
+font-size:19px;
+}
+.league-and-format-style {
+font-family: 'Roberto',Helvetica,sans-serif;
+font-weight:500;
+}
+.border-bottom {
+border-bottom:1px solid black;
+}
+/** jumbotron **/
+.jumbotron-style {
+padding-top:200px;
+padding-bottom:300px;
+margin-bottom: 30px;
+}
+.jumbotron-style-events {
+padding-top:66px;
+padding-bottom:200px;
+}
+/** index section **/
 .why-use-symposium-head {
-
-    
-    font-family:'Arial', sans-serif; 
-    font-size:45px;
-    text-align:center;
+font-family:'Arial', sans-serif; 
+font-size:45px;
+text-align:center;
+color:cyan;
 }
-
 .why-use-symposium-text {
-
-    color:#ffffff;
+color:#ffffff;
 }
 
+/** Modal **/
+.modal-button {
+color:#ffffff;
+background-color:#040404;
+font-weight:600;
+border-color:#040404;
+}
+
+.modal-button:hover {
+color:#ffffff;
+background-color:#040404;
+border-color:#040404;
+}
+.modal-email-text {
+font-family: 'Roberto',Helvetica,sans-serif;
+}
 /* card */
 .row-equal > div[class*='col-'] {
-    display: flex;
-    flex: 1 0 auto;
+display: flex;
+flex: 1 0 auto;
 }
-
 .card {
-
-    background-color:#1F2833;
+background-color:#1F2833;
 }
-
 .row-equal .card {
-   width: 100%;
+width: 100%;
 }
-
-.card-header-color {
-
-    color:#66FCF1;
-}
-
-.card-text-colour {
-
-    background-color:#1F2833;
-    color:white;
-}
-
-
 .card-header-background {
-
-    background-color:#040404;
-    text-align:center;
+background-color:#040404;
+text-align:center;
 }
-
 .card-block {
-
-    background-color:#1F2833;
+background-color:#1F2833;
 }
-
 .card-text {
-
-    font-size:18px;
-    padding-left:10px;
-    padding-right:10px;
-    margin-top:10px;
+font-size:18px;
+padding-left:10px;
+padding-right:10px;
+margin-top:10px;
+font-family: 'Roberto',Helvetica,sans-serif;
 }
-
 .card-img-top-250 {
-    max-height: 250px;
-    overflow:hidden;
+max-height: 250px;
+overflow:hidden;
 }
-
-    /** esports-location section **/
-
-    .events-header {
-
-        color:white;
-    }
-
-    #map {
-    
-    min-height: 360px;
-    
-    }
-
-    /** Matches **/
-
-    .region-cell {
-
-        text-align:right;
-    }
-
+/** esports-location section **/
+.events-header {
+color:white;
+}
+#map {
+min-height: 360px;
+}
+/** Matches **/
+.region-cell {
+text-align:right;
+}
 /** footer **/
 footer {
- background-color:#040404;
- color: white;
- min-height: 140px;
- margin: 0;
+background-color:#040404;
+color: white;
+min-height: 140px;
+margin: 0;
 }
-
 .footer-style {
-
- list-style-type: none;
- overflow: hidden;
- margin-top:50px;
+list-style-type: none;
+overflow: hidden;
+margin-top:50px;
 }
-
 .li-style-footer {
- font-size:18px;
- font-family: 'Oswald', sans-serif;
- color:#ffffff;
- display:inline;
- margin-right:16px;
+font-size:18px;
+font-family: 'Oswald', sans-serif;
+color:#ffffff;
+display:inline;
+margin-right:16px;
 }
-
 .li-style-footer-esports-ltd {
-   margin-left:35px;
+margin-left:35px;
 }
-
- 
 .newsletter-button-footer {
-     color:#ffffff;
-    font-size: 23.5px;
-    margin-top:51px;
-    margin-left:7px;
+color:#ffffff;
+font-size: 23.5px;
+margin-top:51px;
+margin-left:7px;
 }
-
 .newsletter-button-footer:hover {
-     color:#ffffff;
+color:#ffffff;
 }
 /** margin containers **/
-
 .margin-bottom-container {
-
-    margin-bottom:125px;
+margin-bottom:125px;
 }
 /* Media Queries */
-
 @media only screen and (max-width: 992px) {
-
 .title {
- text-align:center;
-}
-
-}
-
-@media only screen and (max-width:740px) {
-
-.title {
-
- text-align:right;
-}
-
-}
-
-@media only screen and (max-width:450px) {
- 
-.title {
-
- font-size:20px;
-}
-
-}
-
-@media only screen and (max-width:1337px) {
- 
-
-.nav-link-style {
-
- font-size:14.5px;
- margin-right:3px;
-}
-
-}
-
-@media only screen and (max-width:992px) {
-
-.footer-style  {
-
 text-align:center;
 }
-
 }
-
+@media only screen and (max-width:576px) {
+.center-sm {
+text-align:center;
+padding:10px;
+}
+}
+@media only screen and (max-width:740px) {
+.title {
+text-align:right;
+}
+}
+@media only screen and (max-width:450px) {
+.title {
+font-size:20px;
+}
+}
+@media only screen and (max-width:1337px) {
+.nav-link-style {
+font-size:14.5px;
+margin-right:3px;
+}
+}
 @media only screen and (max-width:992px) {
- 
-
+.footer-style  {
+text-align:center;
+}
+}
+@media only screen and (max-width:992px) {
 .li-style-footer-esports-ltd {
-
 margin-left:0;
 }
-
 }
-
 @media only screen and (max-width:992px) {
- 
 .center {
-
 text-align:center;
-
 }
 }
 @media only screen and (max-width:992px) {
- 
 .margin-bottom-card-992 {
-
 margin-bottom:75px;
-
+}
+}
+@media only screen and (max-width:576px) {
+.jumbotron-header {
+font-size:40px;
 }
 }

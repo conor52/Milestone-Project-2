@@ -1,14 +1,6 @@
-
-
-
-
-
-
-
 function sendMail(newsletter) {
     emailjs.send("gmail", "esports_symposium_newsletter", {
         "from_email": newsletter.emailaddress.value
-      
     })
     .then(
         function(response) {
@@ -20,5 +12,3 @@ function sendMail(newsletter) {
     );
     return false;  // To block from loading a new page
 }
-
-

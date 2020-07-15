@@ -1,188 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="assets/js/lol.js"></script>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         type="text/css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!--Code to connect emaijs found on their website, with my own API key inserted, without it I cant invoke emailjs. -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script>
+         (function(){
+            emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
+         })();
+      </script>
+      <title>Esports Symposium Home</title>
+   </head>
+   <body>
+      <header>
+      <!--Made a sticky top navigation using a combination of relative and fixed positions.I implemented this as a recommendation after my last MSP, it will create a better UX. -->
+         <div class="sticky-top">
+            <div class="container-fluid sticky-top-inner ">
+               <div class="row  nav-style ">
+                  <div class="col-lg-4 col-9">
+                     <a class="title"  href="index.html">
+                        <h1 class="title">Esports Symposium</h1>
+                     </a>
+                  </div>
+                  <nav class="col-lg-4 col-2 offset-1 offset-lg-0 navbar navbar-expand-lg  ">
+                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                     <span class="navbar-toggler-icon toggler-style "></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbar-links ">
+                           <li class="nav-item">
+                              <a  class="  nav-link-style " href="matches.html">Matches</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link-style" href="esports-events.html">Esports Events</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+                  <!--added a newsletter button from font awesome, with an added css hover animation. I picked a mail as it would intuitively represent the act of signing up for a newsletter. -->
+                  <div class="col-lg-2  offset-lg-2 d-none d-lg-block ">
+                     <ul class="nav navbar-nav ">
+                        <li><a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce d-none d-lg-block">
+                           <i class="newsletter-button-nav hvr-icon  far fa-envelope"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!--wraped an imagine around all sections.I wanted to keep a consistent theme where possible of the colour pallete of black, blue ish and cyan colours throughout the website.-->
+      <div class="background-image">
+         <section>
+         <!-- A jumbotron borrowed from bootstrap. They were perhaps lacking in my last MSP, I decided to use one here as I like the nature of them standing out and being eye catching for the user. -->
+            <div class="jumbotron-fluid jumbotron-style mb-0">
+               <div class="container">
+                  <h2 class="display-3 cyan font-weight-bold">Welcome to the hub of esports</h2>
+                  <p class="lead white">Find everything related to League of Legends and Counter-Strike:Global Offensive here</p>
+               </div>
+            </div>
+         </section>
+         <section class="container-fluid" id="mid-1">
+            <div class="row">
+               <div class=" col-12 col-md-4 offset-md-4 center-sm">
+                  <h2 class="display-4 why-use-symposium-head cyan">Why use Symposium?</h2>
+                  <p class="why-use-symposium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis, diam non gravida lobortis,
+                     turpis sapien porta arcu, ut molestie mi eros nec eros. In est elit,
+                     lacinia et ligula sed, egestas lacinia arcu. Quisque justo massa, venenatis non molestie sit amet, molestie in enim. Maecenas et pellentesque quam.
+                  </p>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!--I borrowed code from my MSP 1 to save time making the footer. Its similiar, except this time it has the aforementioned mail icon. I believe its a clean design and its the only code I borrowed from my last project. -->
+      <footer class="container-fluid">
+         <div class="row footer-margin">
+            <div class="col-12 col-lg-4 ">
+               <div>
+                  <ul class="footer-style li-style-footer-esports-ltd">
+                     <li class=" li-style-footer">
+                        @2020 Esports Symposium Ltd
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+               <div>
+                  <ul class="footer-style">
+                     <li class="li-style-footer">
+                        Terms and Conditions    
+                     </li>
+                     <li class="li-style-footer">     Privacy Policy
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class=" col-12 col-lg-2 center">
+               <a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce">
+               <i class="newsletter-button-footer hvr-icon  far fa-envelope"></i>
+               </a>
+            </div>
+         </div>
+      </footer>
 
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-</script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
-      
-
-   })();
-</script>
-
-
-
-    <title>Esports Symposium Home</title>
-    
-</head>
-<body>
-    <header>
-    <div class="sticky-top">
-    <div class="container-fluid sticky-top-inner ">
-    <div class="row  nav-style ">
-    
-    <div class="col-lg-4 col-9     title-position">
-    
-  <a class="title"  href="index.html"><h1 class="title">Esports Symposium</h1></a>
-  </div>
-  
-  <nav class="col-lg-4 col-2 offset-1 offset-lg-0 navbar navbar-expand-lg  ">
-  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-    <span class="navbar-toggler-icon toggler-style "></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav navbar-links ">
-     
-      <li class="nav-item">
-        <a  class="  nav-link-style " href="matches.html">Matches</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link-style" href="esports-events.html">Esports Events</a>
-      </li>
-    
-    </ul>
-    </div>
-    
-  </nav>
-    <div class="col-lg-2  offset-lg-2 d-none d-lg-block ">
-   <ul class="nav navbar-nav ">
-      <li><a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce d-none d-lg-block">
-      <i class="newsletter-button-nav hvr-icon  far fa-envelope"></i>
-     </a>
-</li>
-
-    </ul>
-    </div>
-
-    </div>
-    
-    </div>
-    </div>
-    </header>
-    <div class="background-image">
-    <section>
-
-   <div class="jumbotron-fluid jumbotron-style mb-0" style="background-img">
-  <div class="container">
-
-    <h1 class="display-3 cyan font-weight-bold">Welcome to the hub of esports</h1>
-    <p class="lead jumbotron-paragraph">Find everything related to League of Legends and Counter-Strike:Global Offensive here</p>
-
-
-
-  </div>
-
- 
-</div>
-
-</section>
-
-<section class="container-fluid" id="mid-1">
-
-<div class="row">
-<div class="col-4 offset-4">
-<h2 class="display-4 why-use-symposium-head cyan">Why use Symposium?</h3>
-<p class="why-use-symposium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis, diam non gravida lobortis,
- turpis sapien porta arcu, ut molestie mi eros nec eros. In est elit,
-  lacinia et ligula sed, egestas lacinia arcu. Quisque justo massa, venenatis non molestie sit amet, molestie in enim. Maecenas et pellentesque quam.</p>
-</div>
-</div>
-
-
-
-</section>
-
-    </div>
-<footer class="container-fluid">
-		<div class="row footer-margin">
-			<div class="col-12 col-lg-4 ">
-				<div>
-					<ul class="footer-style li-style-footer-esports-ltd">
-						<li class=" li-style-footer">
-							@2020 Esports Symposium Ltd
-						</li>
-					
-					</ul>
-				</div>
-			</div>
-			<div class="col-12 col-lg-6">
-            				<div>
-					<ul class="footer-style">
-
-						<li class="li-style-footer">
-							Terms and Conditions    
-						</li>
-						<li class="li-style-footer">     Privacy Policy
-						</li>
-					</ul>
-				</div>
-
-		
-			</div>
-			<div class=" col-12 col-lg-2 center">
-				 <a href="#" data-toggle="modal" data-target="#modal" role="button" class="hvr-icon-bounce">
-      <i class="newsletter-button-footer hvr-icon  far fa-envelope"></i>
-</a>
-
-			</div>
-		</div>
-        </footer>
-
-        <div class="modal" tabindex="-1" role="dialog" id="modal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title .modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-				</div>
-				<div class="modal-body">
-					<form onsubmit="return sendMail(this);">
-						<div class="form-group">
-							<label for="exampleInputEmail1" class="label-style">Email address</label>
-							<input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
-                        </div>
-    
-								<button type="submit"  class="btn btn-success commence-free-trial-button hvr-float-shadow">Send newsletter</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-        
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/send-newsletter.js"></script>
-    
-
-</body>
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title .modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form onsubmit="return sendMail(this);">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1" class="modal-email-text">Email address</label>
+                        <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+                     </div>
+                     <button type="submit"  class="btn btn-success modal-button">Send newsletter</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--I added as manyscript tags at the end of the body to improve loading times as much as I could.  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="assets/js/send-newsletter.js"></script>
+   </body>
 </html>
