@@ -8,6 +8,7 @@ padding-top:35px;
 }
 .background-image {
 background: url("https://images.pexels.com/photos/937980/pexels-photo-937980.jpeg?cs=srgb&dl=blue-smoke-wallpaper-937980.jpg&fm=jpg");
+background-size: cover;
 }
 .title {
 font-family: 'Arial', sans-serif;
@@ -16,7 +17,6 @@ text-align:center;
 font-weight:600;
 margin-top:9px;
 }
-
 .title:hover /**This clas removes styling that you'd normally see while hovering on a link. White compliments the black background so well that I didnt want to change it. **/{
 text-decoration: none;
 color:#ffffff;
@@ -28,18 +28,15 @@ padding:7px;
 margin-right:14px;
 font-size: 20px;
 }
+.link-underline {
+    text-decoration: underline;
+}
 .nav-link-style:hover {
 color:#ffffff;
 text-decoration:underline;
 }
-.navbar-links {
-padding-top:10px;
-}
 .toggler-style {
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.toggler-position {
-margin-bottom:100px;
 }
 .newsletter-button-nav {
 color:#ffffff;
@@ -59,12 +56,19 @@ position:fixed;
 .white {
 color:#ffffff;
 }
+.white-bg {
+    background-color:#ffffff;
+}
 .cyan {
 color:#66FCF1;
+}
+.grey-bg {
+    background-color:#c2c2d6;
 }
 /** matches table **/
 .time-h4 {
 font-size:15px;
+color:black;
 }
 .time-span {
 font-size: 25px;
@@ -79,17 +83,16 @@ width:50px;
 height:50px;
 margin-top:20px;
 }
-.matchup {
-margin-top:25px;
-}
 .matchup-style {
 font-family: 'Roberto',Helvetica,sans-serif;
 font-weight:500;
 font-size:19px;
+color:black;
 }
 .league-and-format-style {
 font-family: 'Roberto',Helvetica,sans-serif;
 font-weight:500;
+color:black;
 }
 .border-bottom {
 border-bottom:1px solid black;
@@ -97,7 +100,7 @@ border-bottom:1px solid black;
 /** jumbotron **/
 .jumbotron-style {
 padding-top:200px;
-padding-bottom:300px;
+padding-bottom:150px;
 margin-bottom: 30px;
 }
 .jumbotron-style-events {
@@ -109,10 +112,52 @@ padding-bottom:200px;
 font-family:'Arial', sans-serif; 
 font-size:45px;
 text-align:center;
-color:cyan;
 }
-.why-use-symposium-text {
-color:#ffffff;
+
+/** Quotes **/
+.quotes {
+ margin-top:20px;
+}
+
+.content-container {
+ padding-top: 75px;
+ padding-bottom: 75px;
+ margin-top:125px;
+}
+
+.quotes-section {
+ padding-bottom: 25px;
+}
+.quote {
+ font-family: 'Lato' , sans-serif;
+ font-size: 17px;
+ margin-bottom:40px;
+ color:white;
+ font-weight:800;
+}
+
+.quote-person {
+ font-weight:800;
+ font-family: 'Lato' , sans-serif;
+ font-size:22px;
+ text-decoration: none;
+ color:white;
+}
+
+.quote-person:hover {
+ color:white;
+ text-decoration: none;
+}
+
+.about-person {
+ font-size: 13px;
+ font-family: 'Lato' , sans-serif;
+ color:white;
+ font-weight:700;
+}
+
+.quote-3 {
+ margin-top:70px;
 }
 
 /** Modal **/
@@ -122,8 +167,12 @@ background-color:#040404;
 font-weight:600;
 border-color:#040404;
 }
-
 .modal-button:hover {
+color:#ffffff;
+background-color:#040404;
+border-color:#040404;
+}
+.modal-button:active {
 color:#ffffff;
 background-color:#040404;
 border-color:#040404;
@@ -131,7 +180,11 @@ border-color:#040404;
 .modal-email-text {
 font-family: 'Roberto',Helvetica,sans-serif;
 }
-/* card */
+.modal-title-style {
+
+ font-family: 'Roberto', sans-serif;
+}
+/* cards */
 .row-equal > div[class*='col-'] {
 display: flex;
 flex: 1 0 auto;
@@ -161,9 +214,6 @@ max-height: 250px;
 overflow:hidden;
 }
 /** esports-location section **/
-.events-header {
-color:white;
-}
 #map {
 min-height: 360px;
 }
@@ -190,9 +240,6 @@ color:#ffffff;
 display:inline;
 margin-right:16px;
 }
-.li-style-footer-esports-ltd {
-margin-left:35px;
-}
 .newsletter-button-footer {
 color:#ffffff;
 font-size: 23.5px;
@@ -202,9 +249,29 @@ margin-left:7px;
 .newsletter-button-footer:hover {
 color:#ffffff;
 }
-/** margin containers **/
+/** margin/padding containers **/
 .margin-bottom-container {
 margin-bottom:125px;
+}
+.padding-top-container-nav{
+padding-top:10px;
+}
+.matchup-margin {
+margin-top:25px;
+}
+.margin-left-footer{
+margin-left:35px;
+}
+.padding-bottom {
+    padding-bottom:100px;
+}
+
+/** Loading Modal **/
+.loading-center {
+text-align:center;
+}
+.loading-center-inner {
+display:inline-block;
 }
 /* Media Queries */
 @media only screen and (max-width: 992px) {
@@ -257,5 +324,11 @@ margin-bottom:75px;
 @media only screen and (max-width:576px) {
 .jumbotron-header {
 font-size:40px;
+}
+}
+
+@media only screen and (max-width:576px) {
+.jumbotron-small-view-width {
+font-size:45px;
 }
 }

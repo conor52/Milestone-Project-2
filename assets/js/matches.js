@@ -1,18 +1,9 @@
 $(document).ready(function() {
-    writeToDocumentG1('match');
+    for (ctr = 1; ctr < 6; ctr++) {
+        writeToDocument(ctr);
+    } 
 });
-$(document).ready(function() {
-    writeToDocumentG2('match');
-});
-$(document).ready(function() {
-    writeToDocumentG3('match');
-});
-$(document).ready(function() {
-    writeToDocumentG4('match');
-});
-$(document).ready(function() {
-    writeToDocumentG5('match');
-});
+
 function getData(match, cb) {
     var xhr = new XMLHttpRequest();
     var url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/matches?filter[id]=" + match + "&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
@@ -24,11 +15,36 @@ function getData(match, cb) {
     xhr.open("GET", url);
     xhr.send();
 }
-function writeToDocumentG1(match) {
-    match = 560862;
+
+function writeToDocument(match) {
+    var match = '';
+    var game_number='';
+    switch(match) {
+        case 1:
+            match = 560862;
+            game_number=1;
+            break;
+        case 2:
+            match = 560863;
+            game_number=2;
+            break;
+        case 3:
+            match = 560864;
+            game_number=3;
+            break;
+        case 4:
+            match = 560865;
+            game_number=4;
+            break;
+        case 5:
+            match = 560866;
+            game_number=5;
+            break;
+    }
+
     getData(match, function(data) {
         var gameDetails = [];
-        var el = document.getElementById("game-1");
+        var el = document.getElementById("game-"+game_number);
         data.forEach(function(item) {
             var matchRow = [];
             matchRow.push('<p class="matchup-style">' + item['name'] + '</p>');
@@ -36,106 +52,19 @@ function writeToDocumentG1(match) {
         });
         el.innerHTML = `<p>${gameDetails}</p>`;
     });
+
     getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("league-and-format");
+        var gameDetails = []
+        var el = document.getElementById("league-and-format-"+game_number);
         data.forEach(function(item) {
             var matchRow = [];
-            matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
+           matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
             gameDetails.push(`<tr>${matchRow}</tr>`);
         });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-}
-function writeToDocumentG2(match) {
-    match = 560863;
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("game-2");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="matchup-style">' + item['name'] + '</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("league-and-format-2");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-}
-function writeToDocumentG3(match) {
-    match = 560864;
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("game-3");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="matchup-style">' + item['name'] + '</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("league-and-format-3");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-}
-function writeToDocumentG4(match) {
-    match = 560865;
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("game-4");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="matchup-style">' + item['name'] + '</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("league-and-format-4");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-}
-function writeToDocumentG5(match) {
-    match = 560866;
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("game-5");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="matchup-style">' + item['name'] + '</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
-    });
-    getData(match, function(data) {
-        var gameDetails = [];
-        var el = document.getElementById("league-and-format-5");
-        data.forEach(function(item) {
-            var matchRow = [];
-            matchRow.push('<p class="league-and-format-style">' + item['league']['name'] + '<br>Best of 1</p>');
-            gameDetails.push(`<tr>${matchRow}</tr>`);
-        });
-        el.innerHTML = `<p>${gameDetails}</p>`;
+        
+        console.log(gameDetails.length)
+        if(gameDetails.length > 0){
+            el.innerHTML = `<p>${gameDetails}</p>`;
+        }
     });
 }

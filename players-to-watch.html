@@ -61,12 +61,12 @@
                      <span class="navbar-toggler-icon toggler-style "></span>
                      </button>
                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav navbar-links ">
+                        <ul class="navbar-nav padding-top-container-nav ">
                            <li class="nav-item">
                               <a  class="  nav-link-style " href="matches.html">Matches</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
+                              <a class="nav-link-style link-underline" href="players-to-watch.html">Players to Watch</a>
                            </li>
                            <li class="nav-item">
                               <a class="nav-link-style" href="esports-events.html">Esports Events</a>
@@ -88,17 +88,18 @@
       </header>
       <div class="background-image">
          <section class="index-jumbotron">
-            <div class="custom-jumbotron jumbotron-fluid jumbotron-style mb-0">
+            <div class="custom-jumbotron jumbotron-fluid jumbotron-style">
                <div class="container ">
-                  <h2 class="display-3 cyan font-weight-bold">
+                  <h2 class="display-3 cyan font-weight-bold jumbotron-small-view-width ">
                   Check out player stats in the LEC
                   </h2>
-                  <p class="lead white">We've picked a few of the superstars to get you on your way</p>
+                  <p class="quote">We've picked a few of the superstars to get you on your way</p>
                </div>
             </div>
          </section>
          <!--For players to watch, I wanted to create a card per player. Originally I wanted it to be a fully fledged out player stats, sadly the API didnt support this feature. Instead, I retrieved basic information such as their player position
-          and team. The card offers a layer of seperation of each player and allows me to have an image per player. I decided to go with these images as they fit the colour scheme.
+          and team. The card offers a layer of seperation of each player and allows me to have an image per player. I decided to go with these images as they fit the colour scheme. I borrowed most of the code here from a youtube video, unfortunately
+          I didnt save the video and I cant find it, the accommodating css is also from the same video, which I've modified for purpose.
           -->
          <section>
             <div class="container p-5">
@@ -117,7 +118,7 @@
                               <h3 class="cyan">Caps</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Caps"></div>
+                              <div id ="Caps" class="loading-center"><i class="loading-icon loading-center-inner  fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -136,7 +137,7 @@
                               <h3 class="cyan">Jankos</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Jankos"></div>
+                              <div id ="Jankos" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -155,7 +156,7 @@
                               <h3 class="cyan">Rekkles</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Rekkles"></div>
+                              <div id ="Rekkles" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -176,7 +177,7 @@
                               <h3 class="cyan">Carzzy</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Carzzy"></div>
+                              <div id ="Carzzy" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -195,7 +196,7 @@
                               <h3 class="cyan">Finn</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Finn"></div>
+                              <div id ="Finn" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -214,7 +215,7 @@
                               <h3 class="cyan">Alphari</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Alphari"></div>
+                              <div id ="Alphari" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -235,7 +236,7 @@
                               <h3 class="cyan">Perkz</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Perkz"></div>
+                              <div id ="Perkz" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -254,7 +255,7 @@
                               <h3 class="cyan">Shad0w</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Shad0w"></div>
+                              <div id ="Shad0w" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -273,7 +274,7 @@
                               <h3 class="cyan">Wunder</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Wunder"></div>
+                              <div id ="Wunder" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -294,7 +295,7 @@
                               <h3 class="cyan">Hans Sama</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Hans-sama"></div>
+                              <div id ="Hans-sama" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -313,7 +314,7 @@
                               <h3 class="cyan">Larssen</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Larssen"></div>
+                              <div id ="Larssen" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -332,7 +333,7 @@
                               <h3 class="cyan">Nukeduck</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Nukeduck"></div>
+                              <div id ="Nukeduck" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
                            </div>
                         </div>
                      </div>
@@ -345,7 +346,7 @@
          <div class="row footer-margin">
             <div class="col-12 col-lg-4 ">
                <div>
-                  <ul class="footer-style li-style-footer-esports-ltd">
+                  <ul class="footer-style margin-left-footer">
                      <li class=" li-style-footer">
                         @2020 Esports Symposium Ltd
                      </li>
@@ -370,6 +371,27 @@
             </div>
          </div>
       </footer>
+       <div class="modal" tabindex="-1" role="dialog" id="modal">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title .modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form onsubmit="return sendMail(this);">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1" class="modal-email-text">Email address</label>
+                        <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email"  maxlength="320">
+                     </div>
+                     <button type="submit"  class="btn modal-button">Send newsletter</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
       <script
          src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
          ></script>

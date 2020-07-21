@@ -36,7 +36,7 @@
                      <span class="navbar-toggler-icon toggler-style "></span>
                      </button>
                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav navbar-links ">
+                        <ul class="navbar-nav padding-top-container-nav">
                            <li class="nav-item">
                               <a  class="nav-link-style " href="matches.html">Matches</a>
                            </li>
@@ -44,7 +44,7 @@
                               <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link-style" href="esports-events.html">Esports Events</a>
+                              <a class="nav-link-style link-underline" href="esports-events.html">Esports Events</a>
                            </li>
                         </ul>
                      </div>
@@ -63,31 +63,31 @@
       </header>
       <div class="background-image">
          <section>
-            <div class="jumbotron-fluid jumbotron-style mb-0">
+            <div class="jumbotron-fluid jumbotron-style">
                <div class="container">
-                  <h2 class="display-3 cyan font-weight-bold">League of Legends esports event locations in 2020</h2>
+                  <h2 class="display-3 cyan font-weight-bold jumbotron-small-view-width ">LoL  event locations in 2020</h2>
                </div>
             </div>
          </section>
-         <section style="background-color:#45a19c">
+         <section>
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-12 col-md-6 offset-md-3">
+                  <div class="col-10 offset-1 grey-bg">
                      <h2 style="color:white">Check the markers below to find the event location</h2>
                   </div>
                </div>
             </div>
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-12col-md-6 offset-md-3">
+                  <div class="col-10 offset-1 grey-bg">
                      <div id="map"></div>
                   </div>
                </div>
             </div>
-            <div class="container-fluid pb-5">
+            <div class="container-fluid padding-bottom">
                <div class="row">
-                  <div class="col-6 offset-3">
-                     <table class="table table-hover color">
+                  <div class="col-10 offset-1 grey-bg">
+                     <table class="table table-hover">
                         <thead>
                            <tr>
                               <th>Tournament</th>
@@ -122,7 +122,7 @@
          <div class="row footer-margin">
             <div class="col-12 col-lg-4 ">
                <div>
-                  <ul class="footer-style li-style-footer-esports-ltd">
+                  <ul class="footer-style margin-left-footer">
                      <li class=" li-style-footer">
                         @2020 Esports Symposium Ltd
                      </li>
@@ -146,7 +146,27 @@
                </a>
             </div>
          </div>
-      </footer>
+      </footer> <div class="modal" tabindex="-1" role="dialog" id="modal">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title .modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form onsubmit="return sendMail(this);">
+                     <div class="form-group">
+                        <label for="exampleInputEmail1" class="modal-email-text">Email address</label>
+                        <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email"  maxlength="320">
+                     </div>
+                     <button type="submit"  class="btn modal-button">Send newsletter</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
       <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4KL69ZfxLi3D3AB-8fD4Pjhm77sGxAgw&callback=initMap"></script>
       <script src="assets/js/maps.js"></script>

@@ -40,9 +40,9 @@
                      <span class="navbar-toggler-icon toggler-style "></span>
                      </button>
                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav navbar-links ">
+                        <ul class="navbar-nav padding-top-container-nav">
                            <li class="nav-item">
-                              <a  class="  nav-link-style " href="matches.html">Matches</a>
+                              <a  class="nav-link-style" href="matches.html">Matches</a>
                            </li>
                            <li class="nav-item">
                               <a class="nav-link-style" href="players-to-watch.html">Players to Watch</a>
@@ -70,31 +70,101 @@
       <div class="background-image">
          <section>
          <!-- A jumbotron borrowed from bootstrap. They were perhaps lacking in my last MSP, I decided to use one here as I like the nature of them standing out and being eye catching for the user. -->
-            <div class="jumbotron-fluid jumbotron-style mb-0">
+            <div class="jumbotron-fluid jumbotron-style">
                <div class="container">
-                  <h2 class="display-3 cyan font-weight-bold">Welcome to the hub of esports</h2>
-                  <p class="lead white">Find everything related to League of Legends and Counter-Strike:Global Offensive here</p>
+                  <h2 class="display-3 cyan font-weight-bold jumbotron-small-view-width">Welcome to the hub of the LEC</h2>
+                  <p class="quote">Find everything related to League of Legends European Championship here</p>
                </div>
             </div>
          </section>
-         <section class="container-fluid" id="mid-1">
+         <section class="container-fluid pb-5" id="mid-1">
             <div class="row">
                <div class=" col-12 col-md-4 offset-md-4 center-sm">
                   <h2 class="display-4 why-use-symposium-head cyan">Why use Symposium?</h2>
-                  <p class="why-use-symposium-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis, diam non gravida lobortis,
-                     turpis sapien porta arcu, ut molestie mi eros nec eros. In est elit,
-                     lacinia et ligula sed, egestas lacinia arcu. Quisque justo massa, venenatis non molestie sit amet, molestie in enim. Maecenas et pellentesque quam.
+                  <p class="quote">Esports Symposium is the leading website for LEC coverage, including match schedules, short player biographies and Event locations which will show you where and when the next 
+                  big league of legends esports events will take place. Like what you see? Subscribe to our newsletter for a weekly update on the LEC scene.
                   </p>
                </div>
             </div>
          </section>
+         <!--I am a big fan of my quotes section from my last MSP, I decided to reuse that block of code but change the content to be more fitting. There is something endeering about the images, aswell as reassurances to the user
+         that this website can be trusted, since prominent people in the industry also use it.-->
+         <section class="quotes-section container-fluid">
+		<div class="container-wrapper">
+			<div class="container quotes-container content-container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="quote">
+							<p class="mobile-text-margin">“Before my casts for the LEC, I always check Esports Symposium for narratives on players that I can interject in my casts.”
+							</p>
+						</div>
+						<div class="media">
+							<div class=" d-sm-block">
+								<a target="_blank" href="#">
+									<img src="assets/images/froskurinn.jpg" alt="Froskurinn Portrait" class="rounded-circle mr-3" height=100 width=100>
+                                    </a>
+							</div>
+							<div class="media-body">
+								<blockquote class="blockquote">
+									<a target="_blank" href="#" class="quote-person"><span>Froskurinn</span></a>
+									<p class="about-person">Froskurinn is the most knowledable analyst for the LEC. She is the former LPL colour commentator.</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="quote">
+							<p class="mobile-text-margin-quote">“Surprisingly, the API to get Match details are better than any other third party site I've seen. It's super reliable.”</p>
+						</div>
+						<div class="media">
+							<div class="d-sm-block">
+								<a target="_blank" href="#">
+									<img src="assets/images/ender.jpg" alt="Ender Portrait" class="rounded-circle mr-3" height=100 width=100></a>
+							</div>
+							<div class="media-body">
+								<blockquote class="blockquote">
+
+									<a target="_blank" href="#" class="quote-person"><span>Ender</span></a>
+
+									<p class="about-person">Endercasts is the newest caster on the scene in League of Legends. He is quickly rising in popularity.</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="row quote-3">
+						<div class="col-12 col-md-6 offset-md-3 ">
+							<div class="quote">
+								<p class="mobile-text-margin">“As a former caster and now fan who travels around the world to watch League of Legends events, Esports Symposium gives me up to date events on riot events that take
+                                place during the year. I cannot be any more grateful for this website.”
+								</p>
+							</div>
+							<div class="media">
+								<div class="d-sm-block">
+									<a target="_blank" href="#">
+										<img src="assets/images/montecristo.jpg" alt="Monte Cristo Portrait" class="rounded-circle mr-3" height=100 width=100>
+ </a>
+								</div>
+								<div class="media-body">
+									<blockquote class="blockquote">
+										<a target="_blank" href="#" class="quote-person"><span>Monte Cristo</span></a>
+
+										<p class="about-person">Monte Cristo is the former greatest analyst in the world in League of Legends. He now is co host to the show "summoning insight". </p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
       </div>
-      <!--I borrowed code from my MSP 1 to save time making the footer. Its similiar, except this time it has the aforementioned mail icon. I believe its a clean design and its the only code I borrowed from my last project. -->
+      <!--I borrowed code from my MSP 1 to save time making the footer. Its similiar, except this time it has the aforementioned mail icon. -->
       <footer class="container-fluid">
          <div class="row footer-margin">
             <div class="col-12 col-lg-4 ">
                <div>
-                  <ul class="footer-style li-style-footer-esports-ltd">
+                  <ul class="footer-style margin-left-footer">
                      <li class=" li-style-footer">
                         @2020 Esports Symposium Ltd
                      </li>
@@ -119,12 +189,11 @@
             </div>
          </div>
       </footer>
-
       <div class="modal" tabindex="-1" role="dialog" id="modal">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title .modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
+                  <h5 class="modal-title modal-title-style ">Enter your Email address below to sign up for our newsletter!</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                   </button>
@@ -133,9 +202,9 @@
                   <form onsubmit="return sendMail(this);">
                      <div class="form-group">
                         <label for="exampleInputEmail1" class="modal-email-text">Email address</label>
-                        <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+                        <input type="email" name="emailaddress" class="form-control" id="exampleInputEmail1"  placeholder="Enter email"  maxlength="320">
                      </div>
-                     <button type="submit"  class="btn btn-success modal-button">Send newsletter</button>
+                     <button type="submit"  class="btn  modal-button">Send newsletter</button>
                   </form>
                </div>
             </div>
