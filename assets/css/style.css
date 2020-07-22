@@ -63,15 +63,37 @@ color:#ffffff;
 color:#66FCF1;
 }
 .grey-bg {
-    background-color:#c2c2d6;
+    background-color:#0B0C10;
 }
-/** matches table **/
+
+/** esports-location section **/
+#map {
+min-height: 360px;
+}
+.table-head-events {
+    font-family: 'Roberto',Helvetica,sans-serif;
+    color:#ffffff;
+}
+.table-cell-events {
+
+    font-family:'Lato', sans-serif;
+    color:#ffffff;
+    font-weight:500;
+}
+/** matches section **/
 .time-h4 {
 font-size:15px;
-color:black;
+color:#ffffff;
+font-family: 'Roberto',Helvetica,sans-serif;
+}
+.match-day {
+    color:#ffffff;
+    font-family: 'Roberto',Helvetica,sans-serif;
 }
 .time-span {
 font-size: 25px;
+font-family: 'Roberto',Helvetica,sans-serif;
+color:#ffffff;
 }
 .team-img-left{
 width:50px;
@@ -113,8 +135,6 @@ font-family:'Arial', sans-serif;
 font-size:45px;
 text-align:center;
 }
-
-/** Quotes **/
 .quotes {
  margin-top:20px;
 }
@@ -159,7 +179,6 @@ text-align:center;
 .quote-3 {
  margin-top:70px;
 }
-
 /** Modal **/
 .modal-button {
 color:#ffffff;
@@ -184,7 +203,7 @@ font-family: 'Roberto',Helvetica,sans-serif;
 
  font-family: 'Roberto', sans-serif;
 }
-/* cards */
+/* players to watch section */
 .row-equal > div[class*='col-'] {
 display: flex;
 flex: 1 0 auto;
@@ -213,14 +232,7 @@ font-family: 'Roberto',Helvetica,sans-serif;
 max-height: 250px;
 overflow:hidden;
 }
-/** esports-location section **/
-#map {
-min-height: 360px;
-}
-/** Matches **/
-.region-cell {
-text-align:right;
-}
+
 /** footer **/
 footer {
 background-color:#040404;
@@ -259,13 +271,9 @@ padding-top:10px;
 .matchup-margin {
 margin-top:25px;
 }
-.margin-left-footer{
-margin-left:35px;
-}
 .padding-bottom {
     padding-bottom:100px;
 }
-
 /** Loading Modal **/
 .loading-center {
 text-align:center;
@@ -330,5 +338,11 @@ font-size:40px;
 @media only screen and (max-width:576px) {
 .jumbotron-small-view-width {
 font-size:45px;
+}
+}
+
+@media only screen and (min-width:720px) {
+.margin-left-footer{
+margin-left:35px;
 }
 }
