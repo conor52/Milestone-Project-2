@@ -1,5 +1,18 @@
 /** Google font import link **/
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap');
+/** colors **/
+.white {
+color:#ffffff;
+}
+.white-bg {
+    background-color:#ffffff;
+}
+.cyan {
+color:#66FCF1;
+}
+.black-bg {
+    background-color:#0B0C10;
+}
 /** navigation **/
 .nav-style {
 background-color:#040404;
@@ -52,48 +65,63 @@ position:relative;
 .sticky-top-inner {
 position:fixed;
 }
-/** colors **/
-.white {
-color:#ffffff;
+/** index section **/
+.why-use-symposium-head {
+font-family:'Arial', sans-serif; 
+font-size:45px;
+text-align:center;
 }
-.white-bg {
-    background-color:#ffffff;
+.quotes {
+ margin-top:20px;
 }
-.cyan {
-color:#66FCF1;
+.content-container {
+ padding-top: 75px;
+ padding-bottom: 75px;
+ margin-top:125px;
 }
-.grey-bg {
-    background-color:#0B0C10;
+.quotes-section {
+ padding-bottom: 25px;
 }
-
-/** esports-location section **/
-#map {
-min-height: 360px;
+.quote {
+ font-family: 'Lato' , sans-serif;
+ font-size: 17px;
+ margin-bottom:40px;
+ color:white;
+ font-weight:800;
 }
-.table-head-events {
-    font-family: 'Roberto',Helvetica,sans-serif;
-    color:#ffffff;
+.quote-person {
+ font-weight:800;
+ font-family: 'Lato' , sans-serif;
+ font-size:22px;
+ text-decoration: none;
+ color:white;
 }
-.table-cell-events {
-
-    font-family:'Lato', sans-serif;
-    color:#ffffff;
-    font-weight:500;
+.quote-person:hover {
+ color:white;
+ text-decoration: none;
+}
+.about-person {
+ font-size: 13px;
+ font-family: 'Lato' , sans-serif;
+ color:white;
+ font-weight:700;
+}
+.quote-3 {
+ margin-top:70px;
+}
+/** jumbotron **/
+.jumbotron-style {
+padding-top:200px;
+padding-bottom:150px;
+margin-bottom: 30px;
+}
+.jumbotron-style-events {
+padding-top:66px;
+padding-bottom:200px;
 }
 /** matches section **/
-.time-h4 {
-font-size:15px;
-color:#ffffff;
-font-family: 'Roberto',Helvetica,sans-serif;
-}
-.match-day {
-    color:#ffffff;
+.match-table-font{
     font-family: 'Roberto',Helvetica,sans-serif;
-}
-.time-span {
-font-size: 25px;
-font-family: 'Roberto',Helvetica,sans-serif;
-color:#ffffff;
 }
 .team-img-left{
 width:50px;
@@ -106,10 +134,8 @@ height:50px;
 margin-top:20px;
 }
 .matchup-style {
-font-family: 'Roberto',Helvetica,sans-serif;
 font-weight:500;
 font-size:19px;
-color:black;
 }
 .league-and-format-style {
 font-family: 'Roberto',Helvetica,sans-serif;
@@ -118,90 +144,6 @@ color:black;
 }
 .border-bottom {
 border-bottom:1px solid black;
-}
-/** jumbotron **/
-.jumbotron-style {
-padding-top:200px;
-padding-bottom:150px;
-margin-bottom: 30px;
-}
-.jumbotron-style-events {
-padding-top:66px;
-padding-bottom:200px;
-}
-/** index section **/
-.why-use-symposium-head {
-font-family:'Arial', sans-serif; 
-font-size:45px;
-text-align:center;
-}
-.quotes {
- margin-top:20px;
-}
-
-.content-container {
- padding-top: 75px;
- padding-bottom: 75px;
- margin-top:125px;
-}
-
-.quotes-section {
- padding-bottom: 25px;
-}
-.quote {
- font-family: 'Lato' , sans-serif;
- font-size: 17px;
- margin-bottom:40px;
- color:white;
- font-weight:800;
-}
-
-.quote-person {
- font-weight:800;
- font-family: 'Lato' , sans-serif;
- font-size:22px;
- text-decoration: none;
- color:white;
-}
-
-.quote-person:hover {
- color:white;
- text-decoration: none;
-}
-
-.about-person {
- font-size: 13px;
- font-family: 'Lato' , sans-serif;
- color:white;
- font-weight:700;
-}
-
-.quote-3 {
- margin-top:70px;
-}
-/** Modal **/
-.modal-button {
-color:#ffffff;
-background-color:#040404;
-font-weight:600;
-border-color:#040404;
-}
-.modal-button:hover {
-color:#ffffff;
-background-color:#040404;
-border-color:#040404;
-}
-.modal-button:active {
-color:#ffffff;
-background-color:#040404;
-border-color:#040404;
-}
-.modal-email-text {
-font-family: 'Roberto',Helvetica,sans-serif;
-}
-.modal-title-style {
-
- font-family: 'Roberto', sans-serif;
 }
 /* players to watch section */
 .row-equal > div[class*='col-'] {
@@ -232,7 +174,20 @@ font-family: 'Roberto',Helvetica,sans-serif;
 max-height: 250px;
 overflow:hidden;
 }
+/** esports-location section **/
+#map {
+min-height: 360px;
+}
+.table-head-events {
+    font-family: 'Roberto',Helvetica,sans-serif;
+    color:#ffffff;
+}
+.table-cell-events {
 
+    font-family:'Lato', sans-serif;
+    color:#ffffff;
+    font-weight:500;
+}
 /** footer **/
 footer {
 background-color:#040404;
@@ -271,6 +226,10 @@ padding-top:10px;
 .matchup-margin {
 margin-top:25px;
 }
+
+.margin-top-10 {
+margin-top:10px;
+}
 .padding-bottom {
     padding-bottom:100px;
 }
@@ -280,6 +239,31 @@ text-align:center;
 }
 .loading-center-inner {
 display:inline-block;
+}
+
+/** Modal **/
+.modal-button {
+color:#ffffff;
+background-color:#040404;
+font-weight:600;
+border-color:#040404;
+}
+.modal-button:hover {
+color:#ffffff;
+background-color:#040404;
+border-color:#040404;
+}
+.modal-button:active {
+color:#ffffff;
+background-color:#040404;
+border-color:#040404;
+}
+.modal-email-text {
+font-family: 'Roberto',Helvetica,sans-serif;
+}
+.modal-title-style {
+
+ font-family: 'Roberto', sans-serif;
 }
 /* Media Queries */
 @media only screen and (max-width: 992px) {
