@@ -5,46 +5,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link
-         href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap"
-         rel="stylesheet"
-         />
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-         type="text/css"
-         />
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-         />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-         />
+         href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
       <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-      <link
-         rel="stylesheet"
-         href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-         crossorigin="anonymous"
-         />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <script
-        
-         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
-         ></script>
-      <script
-        
-         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-         ></script>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
       <script>
          (function () {
            emailjs.init("user_IPLyHMawhYx9L6cmyHPV7");
          })();
       </script>
-      <script src="assets/js/stats.js"></script>
-      <title>Esports Symposium Home</title>
+      <script src="assets/js/player-info.js"></script>
+      <title>Esports Symposium Players to Watch</title>
    </head>
    <body>
       <header>
@@ -87,8 +64,8 @@
          </div>
       </header>
       <div class="background-image">
-         <section class="index-jumbotron">
-            <div class="custom-jumbotron jumbotron-fluid jumbotron-style">
+         <section>
+            <div class="jumbotron-fluid jumbotron-style">
                <div class="container ">
                   <h2 class="display-3 cyan font-weight-bold jumbotron-small-view-width ">
                   Check out player stats in the LEC
@@ -104,28 +81,28 @@
          <section>
             <div class="container p-5">
                <div class="row row-equal mb-5  ">
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card" style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/caps.png"
                               alt="caps-portrait"
                               />
                         </div>
-                        <div class="card-block block-border-colour ">
-                           <div class="card-header card-header-background">
+                        <div class="card-block">
+                           <div class="card-header">
                               <h3 class="cyan">Caps</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Caps" class="loading-center"><i class="loading-icon loading-center-inner  fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Caps" class="loading-center"><i class="loading-icon loading-center-inner  fa fa-spinner fa-spin hide"  style="font-size:40px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12  margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12  margin-bottom-card">
                      <div class="card "  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/jankos.png"
@@ -133,39 +110,39 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Jankos</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Jankos" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Jankos" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:40px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 d-none d-md-block  margin-bottom-card-992">
+                  <div class="col-lg-4 col-12 d-md-none d-lg-block  margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/rekkles.png"
                               alt="rekkles-portrait"
                               />
                         </div>
-                        <div class="card-block">
-                           <div class="card-header card-header-background">
+                        <div class="card-block rekkles-finn-pb ">
+                           <div class="card-header">
                               <h3 class="cyan">Rekkles</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Rekkles" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Rekkles" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="row row-equal mb-5 ">
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/carzy.png"
@@ -173,58 +150,58 @@
                               />
                         </div>
                         <div class="card-block ">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Carzzy</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Carzzy" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Carzzy" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/finn.png"
                               alt="finn-portrait"
                               />
                         </div>
-                        <div class="card-block ">
-                           <div class="card-header card-header-background">
+                        <div class="card-block rekkles-finn-pb  ">
+                           <div class="card-header">
                               <h3 class="cyan">Finn</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Finn" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Finn" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-12 d-md-none d-lg-block margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/alphari.png"
                               alt="alphari-portrait"
                               />
                         </div>
-                        <div class="card-block ">
-                           <div class="card-header card-header-background">
+                        <div class="card-block">
+                           <div class="card-header">
                               <h3 class="cyan">Alphari</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Alphari" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Alphari" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:40px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="row row-equal mb-5  ">
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/perkz.png"
@@ -232,18 +209,18 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Perkz</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Perkz" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Perkz" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/shadow.png"
@@ -251,18 +228,18 @@
                               />
                         </div>
                         <div class="card-block ">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Shad0w</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Shad0w" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Shad0w" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-12 d-md-none d-lg-block margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/wunder.png"
@@ -270,20 +247,20 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Wunder</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Wunder" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Wunder" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="row row-equal  ">
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/hans.png"
@@ -291,18 +268,18 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Hans Sama</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Hans-sama" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Hans-sama" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-md-6 col-12 margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/larssen.png"
@@ -310,18 +287,18 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Larssen</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Larssen" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Larssen" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-4 col-12 margin-bottom-card-992">
+                  <div class="col-lg-4 col-12 d-md-none d-lg-block margin-bottom-card">
                      <div class="card"  style="border:1px solid rgb(4, 4, 4)">
-                        <div class="card-img-top card-img-top-250">
+                        <div class="card-img-top">
                            <img
                               class="img-fluid"
                               src="assets/images/nukeduck.png"
@@ -329,11 +306,11 @@
                               />
                         </div>
                         <div class="card-block">
-                           <div class="card-header card-header-background">
+                           <div class="card-header">
                               <h3 class="cyan">Nukeduck</h3>
                            </div>
                            <div class="card-text white">
-                              <div id ="Nukeduck" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"></i></div>
+                              <div id ="Nukeduck" class="loading-center"><i class="loading-icon  loading-center-inner fa fa-spinner fa-spin hide"  style="font-size:48px;color:white"></i></div>
                            </div>
                         </div>
                      </div>
@@ -343,10 +320,10 @@
          </section>
       </div>
       <footer class="container-fluid">
-         <div class="row footer-margin">
+         <div class="row">
             <div class="col-12 col-lg-4 ">
                <div>
-                  <ul class="footer-style margin-left-footer">
+                  <ul class="footer-style">
                      <li class=" li-style-footer">
                         @2020 Esports Symposium Ltd
                      </li>

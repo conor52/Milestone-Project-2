@@ -1,3 +1,6 @@
+// Similiar to matches.js.However, this page instead has direct input into the paragraphs along with data from the API. as a result, despite much testing, I could only implement this by making differnt writeToDoucument functions for
+// each player, the only difference being the player variable value changing and the static information I wrote inside the P tags. Maybe there is a way around this, but after hours of testing and trying different things this is what I could do.
+// Ideally, I'd like to reuse the functions similiar to the switch statement in matches.js. When I tried to enter information into a p tag on the html page, it was removed once the JS loaded from stats.js. 
  $(document).ready(function() {
     writeToDocumentCaps('player')
 });
@@ -54,7 +57,7 @@ function writeToDocumentCaps(player) {
         data.forEach(function(item) {
             var playerItems = [];
             playerItems.push('<p>'+item['name']+' is the '+item['role']+' for '+item['current_team']["name"]+'. Coming off four consecutative titles, he is definetly the mid to watch in the LEC. From what we have seen thus far, he is already back to a world class level after coming of a roleswap from adc.</p>');
-            playerDetails.push(`${playerItems}`);
+        playerDetails.push(`${playerItems}`);
         });
         el.innerHTML = `<div>${playerDetails}</div>`;
     });
@@ -119,7 +122,7 @@ function writeToDocumentAlphari(player) {
     getData(player, function(data) {
         data.forEach(function(item) {
             var playerItems = [];
-            playerItems.push('<p>'+item['name']+' is the '+item['role']+' for '+item['current_team']["name"]+'. The best player in the league, his team is falling apart around him. You can always count on him getting solo kills and jungle attention, but often its not enough for a struggling Origen to close out games. His Jungler, Xerxe, should consider changing his playstyle towards top lane.</p>');
+            playerItems.push('<p>'+item['name']+' is the '+item['role']+' for '+item['current_team']["name"]+'. The best player in the league, his team is falling apart around him. You can always count on him getting solo kills and jungle attention, but often its not enough for a struggling Origen to close out games. His Jungler, Xerxe, should consider changing his playstyle towards top lane. This way, I could imagine Origen making playoffs.</p>');
             playerDetails.push(`${playerItems}`);
         });
         el.innerHTML = `<div>${playerDetails}</div>`;
@@ -186,7 +189,7 @@ function writeToDocumentShadow(player) {
     getData(player, function(data) {
         data.forEach(function(item) {
             var playerItems = [];
-            playerItems.push('<p>'+item['name']+' is the '+item['role']+' for '+item['current_team']["name"]+'. Easily the most promosing rookie alongside Carzzy, the synergy developed between himself and Humanoid rivals G2 and even Fnatic in 2018. As we saw last playoffs, it only take one or two pop games from Shad0w to win a best of five vs g2. </p>');
+            playerItems.push('<p>'+item['name']+' is the '+item['role']+' for '+item['current_team']["name"]+'. He is definitely the most promosing rookie alongside Carzzy, the synergy developed between himself and Humanoid rivals G2 and even Fnatic in 2018. As we saw last playoffs, it only take one or two pop games from Shad0w to win a best of five vs g2. </p>');
             playerDetails.push(`${playerItems}`);
         });
         el.innerHTML = `<div>${playerDetails}</div>`;

@@ -145,18 +145,18 @@ color:black;
 .border-bottom {
 border-bottom:1px solid black;
 }
-/* players to watch section */
-.row-equal > div[class*='col-'] {
-display: flex;
-flex: 1 0 auto;
+.h4-table-size {
+font-size: 15px;
 }
+.span-table-size {
+font-size:25px;
+}
+/* players to watch section */
+
 .card {
 background-color:#1F2833;
 }
-.row-equal .card {
-width: 100%;
-}
-.card-header-background {
+.card-header{
 background-color:#040404;
 text-align:center;
 }
@@ -170,7 +170,7 @@ padding-right:10px;
 margin-top:10px;
 font-family: 'Roberto',Helvetica,sans-serif;
 }
-.card-img-top-250 {
+.card-img-top {
 max-height: 250px;
 overflow:hidden;
 }
@@ -240,7 +240,6 @@ text-align:center;
 .loading-center-inner {
 display:inline-block;
 }
-
 /** Modal **/
 .modal-button {
 color:#ffffff;
@@ -309,7 +308,7 @@ text-align:center;
 }
 }
 @media only screen and (max-width:992px) {
-.margin-bottom-card-992 {
+.margin-bottom-card {
 margin-bottom:75px;
 }
 }
@@ -321,12 +320,38 @@ font-size:40px;
 
 @media only screen and (max-width:576px) {
 .jumbotron-small-view-width {
-font-size:45px;
+font-size:33px;
 }
 }
-
 @media only screen and (min-width:720px) {
 .margin-left-footer{
 margin-left:35px;
+}
+}
+@media only screen and (max-width:400px) {
+.h4-table-size{
+font-size:12px;
+}
+}
+@media only screen and (max-width:400px) {
+.span-table-size{
+font-size:20px;
+}
+}
+
+@media only screen and (max-width:720px) {
+.jumbotron-style {
+padding-bottom:0px;
+padding-top:135px;
+}
+}
+@media only screen and (max-width:720px) {
+.events-h2-small-viewwidth {
+font-size:19px;
+}
+}
+@media only screen and (min-width:1200px) {
+.rekkles-finn-pb {
+padding-bottom:20px;
 }
 }
