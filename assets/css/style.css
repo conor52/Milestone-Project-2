@@ -5,13 +5,13 @@
 color:#ffffff;
 }
 .white-bg {
-    background-color:#ffffff;
+background-color:#ffffff;
 }
 .cyan {
 color:#66FCF1;
 }
 .black-bg {
-    background-color:#0B0C10;
+background-color:#0B0C10;
 }
 /** navigation **/
 .nav-style {
@@ -42,7 +42,7 @@ margin-right:14px;
 font-size: 20px;
 }
 .link-underline {
-    text-decoration: underline;
+text-decoration: underline;
 }
 .nav-link-style:hover {
 color:#ffffff;
@@ -110,7 +110,12 @@ text-align:center;
  margin-top:70px;
 }
 /** jumbotron **/
-.jumbotron-style {
+.jumbotron-padding {
+padding-top:200px;
+padding-bottom:150px;
+margin-bottom: 30px;
+}
+.jumbotron-padding-index {
 padding-top:200px;
 padding-bottom:150px;
 margin-bottom: 30px;
@@ -121,7 +126,7 @@ padding-bottom:200px;
 }
 /** matches section **/
 .match-table-font{
-    font-family: 'Roberto',Helvetica,sans-serif;
+font-family: 'Roberto',Helvetica,sans-serif;
 }
 .team-img-left{
 width:50px;
@@ -152,13 +157,13 @@ font-size: 15px;
 font-size:25px;
 }
 /* players to watch section */
-
 .card {
 background-color:#1F2833;
 }
 .card-header{
 background-color:#040404;
 text-align:center;
+font-family: 'Oswald', sans-serif;
 }
 .card-block {
 background-color:#1F2833;
@@ -179,14 +184,13 @@ overflow:hidden;
 min-height: 360px;
 }
 .table-head-events {
-    font-family: 'Roberto',Helvetica,sans-serif;
-    color:#ffffff;
+font-family: 'Roberto',Helvetica,sans-serif;
+color:#ffffff;
 }
 .table-cell-events {
-
-    font-family:'Lato', sans-serif;
-    color:#ffffff;
-    font-weight:500;
+font-family:'Lato', sans-serif;
+color:#ffffff;
+font-weight:500;
 }
 /** footer **/
 footer {
@@ -226,12 +230,11 @@ padding-top:10px;
 .matchup-margin {
 margin-top:25px;
 }
-
 .margin-top-10 {
 margin-top:10px;
 }
 .padding-bottom {
-    padding-bottom:100px;
+padding-bottom:100px;
 }
 /** Loading Modal **/
 .loading-center {
@@ -261,7 +264,6 @@ border-color:#040404;
 font-family: 'Roberto',Helvetica,sans-serif;
 }
 .modal-title-style {
-
  font-family: 'Roberto', sans-serif;
 }
 /* Media Queries */
@@ -281,9 +283,9 @@ padding:10px;
 text-align:right;
 }
 }
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:570px) {
 .title {
-font-size:20px;
+font-size:25px;
 }
 }
 @media only screen and (max-width:1337px) {
@@ -312,14 +314,13 @@ text-align:center;
 margin-bottom:75px;
 }
 }
-@media only screen and (max-width:576px) {
-.jumbotron-header {
+@media only screen and (max-width:772px) {
+.jumbotron-small-view-width {
 font-size:40px;
 }
 }
-
-@media only screen and (max-width:576px) {
-.jumbotron-small-view-width {
+@media only screen and (max-width:772px) {
+.why-use-symposium-head {
 font-size:33px;
 }
 }
@@ -338,11 +339,16 @@ font-size:12px;
 font-size:20px;
 }
 }
-
 @media only screen and (max-width:720px) {
-.jumbotron-style {
+.jumbotron-padding{
 padding-bottom:0px;
-padding-top:135px;
+padding-top:165px;
+}
+}
+@media only screen and (max-width:720px) {
+.jumbotron-padding-index {
+padding-bottom:40px;
+padding-top:165px;
 }
 }
 @media only screen and (max-width:720px) {
@@ -353,5 +359,10 @@ font-size:19px;
 @media only screen and (min-width:1200px) {
 .rekkles-finn-pb {
 padding-bottom:20px;
+}
+}
+@media only screen and (min-width:720px) {
+.why-use-symposium {
+padding-top:75px;
 }
 }
