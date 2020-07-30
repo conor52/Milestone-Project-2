@@ -42,7 +42,6 @@ function writeToDocument(match) {
 			break;
 	}
 	getData(match, function (data) {
-		console.dir(data);
 		var gameDetails = []; // this empty array will be used to store the object inside the API
 		var el = document.getElementById("game-" + game_number); //The line of code used to actually connect with the html page and display the information within the Div. the game_number variable will provide it with a unique ID.
 		data.forEach(function (item) { // a loop that will iterate through the API object

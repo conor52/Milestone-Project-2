@@ -1,6 +1,6 @@
-/** Google font import link **/
+/**Google font import link */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&display=swap');
-/** colors **/
+/* colors */
 .white {
 color:#ffffff;
 }
@@ -13,7 +13,7 @@ color:#66FCF1;
 .black-bg {
 background-color:#0B0C10;
 }
-/** navigation **/
+/* navigation */
 .nav-style {
 background-color:#040404;
 padding-bottom:35px;
@@ -30,7 +30,7 @@ text-align:center;
 font-weight:600;
 margin-top:9px;
 }
-.title:hover /**This clas removes styling that you'd normally see while hovering on a link. White compliments the black background so well that I didnt want to change it. **/{
+.title:hover /*This class removes styling that you'd normally see while hovering on a link. White compliments the black background so well that I didnt want to change it. */{
 text-decoration: none;
 color:#ffffff;
 }
@@ -59,13 +59,13 @@ margin-top:24px;
 .newsletter-button-nav:hover {
 color:#ffffff;
 }
-.sticky-top /** Position relative in parent and fixed in child element is easiest way to create a sticky top.**/{
+.sticky-top /* Position relative in parent and fixed in child element is easiest way to create a sticky top.*/{
 position:relative;
 }
 .sticky-top-inner {
 position:fixed;
 }
-/** index section **/
+/**index section */
 .why-use-symposium-head {
 font-family:'Arial', sans-serif; 
 font-size:45px;
@@ -109,7 +109,7 @@ text-align:center;
 .quote-3 {
  margin-top:70px;
 }
-/** jumbotron **/
+/* jumbotron */
 .jumbotron-padding {
 padding-top:200px;
 padding-bottom:150px;
@@ -124,7 +124,7 @@ margin-bottom: 30px;
 padding-top:66px;
 padding-bottom:200px;
 }
-/** matches section **/
+/* matches section */
 .match-table-font{
 font-family: 'Roberto',Helvetica,sans-serif;
 }
@@ -146,9 +146,6 @@ font-size:19px;
 font-family: 'Roberto',Helvetica,sans-serif;
 font-weight:500;
 color:black;
-}
-.border-bottom {
-border-bottom:1px solid black;
 }
 .h4-table-size {
 font-size: 15px;
@@ -179,7 +176,11 @@ font-family: 'Roberto',Helvetica,sans-serif;
 max-height: 250px;
 overflow:hidden;
 }
-/** esports-location section **/
+.alphari-img { /* This player image messed up the styling so I had to manually change the dimensions of it */
+width:800px;
+height:350px;
+}
+/* esports-location section */
 #map {
 min-height: 360px;
 }
@@ -192,7 +193,13 @@ font-family:'Lato', sans-serif;
 color:#ffffff;
 font-weight:500;
 }
-/** footer **/
+.white-border-bottom {
+border-bottom:1px solid #ffffff;
+}
+.table thead th {
+border-bottom: none;
+}
+/* footer */
 footer {
 background-color:#040404;
 color: white;
@@ -220,7 +227,7 @@ margin-left:7px;
 .newsletter-button-footer:hover {
 color:#ffffff;
 }
-/** margin/padding containers **/
+/* margin/padding containers */
 .margin-bottom-container {
 margin-bottom:125px;
 }
@@ -236,14 +243,14 @@ margin-top:10px;
 .padding-bottom {
 padding-bottom:100px;
 }
-/** Loading Modal **/
+/* Loading Modal */
 .loading-center {
 text-align:center;
 }
 .loading-center-inner {
 display:inline-block;
 }
-/** Modal **/
+/* Modal */
 .modal-button {
 color:#ffffff;
 background-color:#040404;
@@ -356,9 +363,9 @@ padding-top:165px;
 font-size:19px;
 }
 }
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1200px) { /* Fixes the difference of card lengths on larger view widths */
 .rekkles-finn-pb {
-padding-bottom:20px;
+padding-bottom:26px;
 }
 }
 @media only screen and (min-width:720px) {

@@ -21,7 +21,7 @@
       </script>
       <title>Esports Symposium Events</title>
    </head>
-   <body>
+   <body onload="initMap()"> <!-- Map is initalised here as I had an error sometimes when it was loaded at the end of the body-->
       <header>
          <div class="sticky-top">
             <div class="container-fluid sticky-top-inner">
@@ -75,7 +75,7 @@
             <div class="container-fluid">
                <div class="row">
                   <div class="col-10 offset-1 black-bg">
-                     <h2 class="white events-h2-small-viewwidth">Check the markers below to find the event location</h2>
+                     <h2 class="white events-h2-small-viewwidth">Click the markers below to find the event location</h2>
                   </div>
                </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="container-fluid padding-bottom">
                <div class="row">
                   <div class="col-10 offset-1 black-bg">
-                     <table class="table">
+                     <table class="table"> <!--Static information for the World championship. I would have pulled the information directly from the API but sadly it was Forbidden with my free plan.-->
                         <thead>
                            <tr class="text-center table-head-events">
                               <th>Location</th>
@@ -108,7 +108,7 @@
                               <td class="d-none d-sm-block">Semi Finals</td>
                               <td>21/10/2020</td>
                            </tr>
-                           <tr  class="text-center">
+                           <tr  class="text-center white-border-bottom">
                               <td>Busan Asiad Main Stadium, Busan, Korea</td>
                               <td class="d-none d-sm-block">Grand Finals</td>
                               <td>28/10/2020</td>
@@ -172,7 +172,7 @@
          </div>
       </div>
       <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4KL69ZfxLi3D3AB-8fD4Pjhm77sGxAgw&callback=initMap"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4KL69ZfxLi3D3AB-8fD4Pjhm77sGxAgw"></script>
       <script src="assets/js/maps.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
