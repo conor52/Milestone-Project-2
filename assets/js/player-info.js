@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 function getData(player, cb) {
 	var xhr = new XMLHttpRequest();
-	var url = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co/players?filter[name]=" + player + "&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
+	var url = "https://secret-ocean-49799.herokuapp.com/https://api.pandascore.co/players?filter[name]=" + player + "&token=oWifVYBc_fpdoTvkGprkPZF3o02OMFXcex1mS647lASrhZjhxeg";
 
 	xhr.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {

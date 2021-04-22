@@ -7,6 +7,8 @@ The backbone of information collection for this League comes from an API called 
 pulled from the API. It only has a maximum request limit of 1000 per hour, you will notice matches.html and players-to-watch.html, the API data load slower as it gets closer to this part and then not at all until an hour passes.
 There is an unfortunate limitation of the API.
 
+[Here](https://conor52.github.io/esports-symposium/matches.html) is the github pages deployed website.
+
 ![Image of Caps and Perkz](https://github.com/conor52/Milestone-Project-2/blob/master/assets/images/perkz-and-caps.png)
 
 # UX
@@ -108,7 +110,7 @@ Below are some Wireframes for esports-events.html:
 
 ## Features left to Implement 
 
-**Accommodation/flight booking system:** As I was writing up this Readme, I realised in the event seeking user story case, that person would merely look at the map on the esports-events page, location and date and would then have to leave my website to go to another to 
+**Accommodation/flight booking system:** As I was writing up this Readme, I realized in the event seeking user story case, that person would merely look at the map on the esports-events page, location and date and would then have to leave my website to go to another to 
 book things like their flights, accommodation etc. It had me thinking, was there any way I could have implemented that on my website so they could spend more time on my website? If those ideas weren't feasible, perhaps I could have added an 
 API that could get me Korean Laws on how to stay over there in accordance to the law, or a transport API to show you how to get from the airport to the venue. The possibilities  are endless here. I could have prompted this page up even further.
 
@@ -163,7 +165,7 @@ browsers. The black rectangle where the player name is was also noticeably  high
 width:800px;
 height: 400px;
 }
-````
+```
 This resolved my issue.
 
 **Unconvinced user:**
