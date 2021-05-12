@@ -125,6 +125,8 @@ basic plan I have is that it only allows for 1000 per hour, you will even notice
 see and endless loading spinner icon and you can see an error message in the console saying max requests reached. A better plan would nearly entirely eliminate this problem. I hope to be judged as if I had a better plan, thus better loading speeds
 upon refreshing the page.
 
+Post submission Note: I have searched long and hard for an appropriate accommodation API on the internet, the best one I could find had a massive flaw where the bearer token changed every 24 hours or so, meaning that I couldn't sustain this feature. I will leave the code I have added but will comment it out until I can find a workable solution.
+
 # Technologies Used
 
 * Html 5: The language used to present content on my website.
